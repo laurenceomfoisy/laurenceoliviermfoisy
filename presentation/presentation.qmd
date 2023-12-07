@@ -1,0 +1,48 @@
+---
+title: "Automatisation de la science"
+author: "Laurence-Olivier M. Foisy"
+format:
+  revealjs: 
+    theme: blood
+    logo: ul_logo.png
+    footer: "Automatisation de la science"
+---
+## Automatiser la science?
+### Deux étapes:
+
+- Méta-analyse des éléments constitutifs de la recherche en analyse de sondages
+- Preuve de concept: Automatisation de la rédaction de revue de littérature en recherche en analyse de sondages
+
+## Going to sleep {background-color="aquamarine"}
+
+- Get in bed
+- Count sheep
+
+## Titre fictif {background-color="black" background-image="https://placekitten.com/100/100" background-size="100px" background-repeat="repeat"}
+
+::: {.incremental}
+- Eat spaghetti
+- Drink wine
+:::
+
+## T2
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Left column
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+
+::::
+
+## Slide with speaker notes
+
+Slide content
+
+::: {.notes}
+Speaker notes go here.
+:::
