@@ -1,31 +1,43 @@
 ---
 title: "Automatisation de la science"
+subtitle: "Une preuve de concept en analyse de données de sondages"
 author: "Laurence-Olivier M. Foisy"
+institute: "Université Laval"
 format:
   revealjs: 
-    theme: beige
-    logo: ul_logo.png
+    theme: night
+    logo: images/ul_logo.png
     footer: "Automatisation de la science"
 ---
 
-## Que sont les GML ?
-
-:::: {.columns}
-
-::: {.column width="50%"}
-### Modèles propriétaires
-- GPT
-- Bard
-- Claude
+## Automatiser la science?
+### Pourquoi? 
+::: {.incremental}
+- Parce qu'on peut
+- Analyse des données dormantes
+- Concentration sur les tâches à valeur ajoutée
+- Contribuer à réduire les barrières à l'entrée de la science
+- Repousser la connaissance globale
+- Accélération du rythme des avancées scientifiques
 :::
 
-::: {.column width="50%"}
-### Modèles libres d'accès
-- Llama
-- Mistral
+::: {.notes}
+Données dormantes: Effectuer des sondages coûte de l'argent. Maximisation des coûts en réutilisant les données existantes.
 :::
 
-::::
+## Les GML 
+### (Large Language Models (LLM))
+- C'est quoi?
+- Comment ça marche?
+::: {.r-stack}
+![Touvron et al. (2023)](images/training_dataset.png){.fragment width="300" height="450"}
+
+![test](images/24_step_process.png){.fragment width="300" height="450"}
+
+![test 2](images/llm_agent.png){.fragment width="400" height="400"}
+:::
+
+
 
 ## Deux questions:
 - Quels sont les éléments constitutifs d'une recherche en analyse de sondages au Canada et plus précisément, les éléments d'une revue de littérature en analyse de sondages au Canada?
@@ -37,10 +49,12 @@ format:
 - Méta-analyse des éléments constitutifs de la recherche en analyse de sondages
 - Preuve de concept: Automatisation de la rédaction de revue de littérature en recherche en analyse de sondages
 
-## Méta-Analyse {background-color="aquamarine"}
+## Méta-Analyse
 
 - Étude de cas: Analyse de sondages au Canada
 - Revue systématique en 24 étapes
+
+![Méthode en 24 étapes](images/24_step_process.png)
 
 ## Preuve de concept
 
@@ -50,10 +64,10 @@ format:
 - Évaluation du prototype
 :::
 
-## Slide with speaker notes
-
-Slide content
-
 ::: {.notes}
-Speaker notes go here.
+Speaker notes go here. here here here here TEST
 :::
+
+## Preuve de concept
+
+![Méthode Bedrock](images/llm_agent.png)
