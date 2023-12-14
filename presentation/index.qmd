@@ -9,6 +9,16 @@ format:
     logo: images/ul_logo.png
     footer: "Automatisation de la science"
 ---
+## Automatisation de la science
+### Deux questions:
+1. Quels sont les éléments constitutifs d'une recherche en analyse de données de sondages canadiens et plus précisément, les éléments d'une revue de littérature en analyse de données de sondages canadiens?
+1. Comment les technologies d'intelligence artificielle (IA) peuvent-elles être utilisées pour automatiser les processus scientifique de recherche, d'analyse et de rédaction?
+
+::: {.notes}
+La première question est divisée en deux parties. Le but ultime du projet est d'automatiser l'ensemble du processus scientifique d'analyse de données de sondages mais il faut commencer quelque part. Ce projet vise seulement à créer une preuve de concept en automatisant la rédaction de la revue de littérature. Pourquoi la revue de litt? C'est l'élément le plus simple à automatiser. Les LLM sont très bons pour résumer des textes et en extraire l'information.
+
+La deuxieme question: Il s'agit ici d'effectuer une preuve de concept. Donc un prototype qui démontre la faisabilité du projet. Il ne s'agit pas de créer un produit fini. Il s'agit de démontrer que c'est possible.
+:::
 
 ## Automatiser la science?
 ### Pourquoi? 
@@ -24,31 +34,6 @@ format:
 Données dormantes: Effectuer des sondages coûte de l'argent. Maximisation des coûts en réutilisant les données existantes.
 :::
 
-## Les GML 
-### (Large Language Models (LLM))
-- C'est quoi?
-- Comment ça marche?
-
-![Touvron et al. (2023)](images/training_dataset.png)
-
-::: {.notes}
-Llama a été entrainé sur 4800GB de données textuelles. Ça représente environ 8.6 millions d'articles scientifiques de 20 pages.
-
-Le modèle détecte les patterns entre les mots et les phrases en les décomposant en Jetons. (Tokens) Il est par la suite capable de faire des prédictions sur le choix des mots qui constitueraient une suite de mots cohérente dépendament du context d'entrée. 
-
-Un LLM ne fait que de la prédiction. Il est incapable de penser, comprendre, réfléchir, etc. Il est simplement capable de faire des prédictions.
-:::
-
-## Deux questions:
-1. Quels sont les éléments constitutifs d'une recherche en analyse de données de sondages canadiens et plus précisément, les éléments d'une revue de littérature en analyse de données de sondages canadiens?
-1. Comment les technologies d'intelligence artificielle (IA) peuvent-elles être utilisées pour automatiser les processus scientifique de recherche, d'analyse et de rédaction?
-
-::: {.notes}
-La première question est divisée en deux parties. Le but ultime du projet est d'automatiser l'ensemble du processus scientifique d'analyse de données de sondages mais il faut commencer quelque part. Ce projet vise seulement à créer une preuve de concept en automatisant la rédaction de la revue de littérature. Pourquoi la revue de litt? C'est l'élément le plus simple à automatiser. Les LLM sont très bons pour résumer des textes et en extraire l'information.
-
-La deuxieme question: Il s'agit ici d'effectuer une preuve de concept. Donc un prototype qui démontre la faisabilité du projet. Il ne s'agit pas de créer un produit fini. Il s'agit de démontrer que c'est possible.
-:::
-
 ## Cadre opératoire
 ### Deux étapes
 
@@ -61,6 +46,21 @@ La deuxieme question: Il s'agit ici d'effectuer une preuve de concept. Donc un p
 - Revue systématique en 24 étapes
 
 ![Muka et al. (2020)](images/24_step_process.png)
+
+## Les Grands modèles linguistiques 
+### Large Language Models (LLM)
+- C'est quoi?
+- Comment ça marche?
+
+![Touvron et al. (2023)](images/training_dataset.png)
+
+::: {.notes}
+Llama a été entrainé sur 4800GB de données textuelles. Ça représente environ 8.6 millions d'articles scientifiques de 20 pages.
+
+Le modèle détecte les patterns entre les mots et les phrases en les décomposant en Jetons. (Tokens) Il est par la suite capable de faire des prédictions sur le choix des mots qui constitueraient une suite de mots cohérente dépendament du context d'entrée. 
+
+Un LLM ne fait que de la prédiction. Il est incapable de penser, comprendre, réfléchir, etc. Il est simplement capable de faire des prédictions.
+:::
 
 ## Preuve de concept
 

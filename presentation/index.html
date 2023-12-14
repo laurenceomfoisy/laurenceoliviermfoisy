@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="presentation_files/libs/clipboard/clipboard.min.js"></script>
-<script src="presentation_files/libs/quarto-html/tabby.min.js"></script>
-<script src="presentation_files/libs/quarto-html/popper.min.js"></script>
-<script src="presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="presentation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="presentation_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Laurence-Olivier M. Foisy">
@@ -15,8 +15,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -95,11 +95,11 @@
     code span.vs { color: #abe338; } /* VerbatimString */
     code span.wa { color: #dcc6e0; } /* Warning */
   </style>
-  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="presentation_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -405,59 +405,9 @@ Laurence-Olivier M. Foisy
 </div>
 
 </section>
-<section id="automatiser-la-science" class="slide level2">
-<h2>Automatiser la science?</h2>
-<h3 id="pourquoi">Pourquoi?</h3>
-<div>
-<ul>
-<li class="fragment">Parce qu’on peut</li>
-<li class="fragment">Analyse des données dormantes</li>
-<li class="fragment">Concentration sur les tâches à valeur ajoutée</li>
-<li class="fragment">Contribuer à réduire les barrières à l’entrée de la science</li>
-<li class="fragment">Repousser la connaissance globale</li>
-<li class="fragment">Accélération du rythme des avancées scientifiques</li>
-</ul>
-</div>
-<aside class="notes">
-<p>Données dormantes: Effectuer des sondages coûte de l’argent. Maximisation des coûts en réutilisant les données existantes.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="les-gml" class="slide level2">
-<h2>Les GML</h2>
-<h3 id="large-language-models-llm">(Large Language Models (LLM))</h3>
-<ul>
-<li>C’est quoi?</li>
-<li>Comment ça marche?</li>
-</ul>
-
-<img data-src="images/training_dataset.png" class="r-stretch quarto-figure-center"><p class="caption">Touvron et al.&nbsp;(2023)</p><aside class="notes">
-<p>Llama a été entrainé sur 4800GB de données textuelles. Ça représente environ 8.6 millions d’articles scientifiques de 20 pages.</p>
-<p>Le modèle détecte les patterns entre les mots et les phrases en les décomposant en Jetons. (Tokens) Il est par la suite capable de faire des prédictions sur le choix des mots qui constitueraient une suite de mots cohérente dépendament du context d’entrée.</p>
-<p>Un LLM ne fait que de la prédiction. Il est incapable de penser, comprendre, réfléchir, etc. Il est simplement capable de faire des prédictions.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="deux-questions" class="slide level2">
-<h2>Deux questions:</h2>
+<section id="automatisation-de-la-science" class="slide level2">
+<h2>Automatisation de la science</h2>
+<h3 id="deux-questions">Deux questions:</h3>
 <ol type="1">
 <li>Quels sont les éléments constitutifs d’une recherche en analyse de données de sondages canadiens et plus précisément, les éléments d’une revue de littérature en analyse de données de sondages canadiens?</li>
 <li>Comment les technologies d’intelligence artificielle (IA) peuvent-elles être utilisées pour automatiser les processus scientifique de recherche, d’analyse et de rédaction?</li>
@@ -465,6 +415,32 @@ Laurence-Olivier M. Foisy
 <aside class="notes">
 <p>La première question est divisée en deux parties. Le but ultime du projet est d’automatiser l’ensemble du processus scientifique d’analyse de données de sondages mais il faut commencer quelque part. Ce projet vise seulement à créer une preuve de concept en automatisant la rédaction de la revue de littérature. Pourquoi la revue de litt? C’est l’élément le plus simple à automatiser. Les LLM sont très bons pour résumer des textes et en extraire l’information.</p>
 <p>La deuxieme question: Il s’agit ici d’effectuer une preuve de concept. Donc un prototype qui démontre la faisabilité du projet. Il ne s’agit pas de créer un produit fini. Il s’agit de démontrer que c’est possible.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="automatiser-la-science" class="slide level2">
+<h2>Automatiser la science?</h2>
+<h3 id="pourquoi">Pourquoi?</h3>
+<div>
+<ul>
+<li class="fragment">Parce qu’on peut</li>
+<li class="fragment">Analyse des données dormantes</li>
+<li class="fragment">Contribuer à réduire les barrières à l’entrée de la science</li>
+<li class="fragment">Accélération du rythme des avancées scientifiques</li>
+<li class="fragment">Repousser la connaissance globale</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Données dormantes: Effectuer des sondages coûte de l’argent. Maximisation des coûts en réutilisant les données existantes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -493,6 +469,30 @@ Laurence-Olivier M. Foisy
 </ul>
 
 <img data-src="images/24_step_process.png" class="r-stretch quarto-figure-center"><p class="caption">Muka et al.&nbsp;(2020)</p></section>
+<section id="les-grands-modèles-linguistiques" class="slide level2">
+<h2>Les Grands modèles linguistiques</h2>
+<h3 id="large-language-models-llm">Large Language Models (LLM)</h3>
+<ul>
+<li>C’est quoi?</li>
+<li>Comment ça marche?</li>
+</ul>
+
+<img data-src="images/training_dataset.png" class="r-stretch quarto-figure-center"><p class="caption">Touvron et al.&nbsp;(2023)</p><aside class="notes">
+<p>Llama a été entrainé sur 4800GB de données textuelles. Ça représente environ 8.6 millions d’articles scientifiques de 20 pages.</p>
+<p>Le modèle détecte les patterns entre les mots et les phrases en les décomposant en Jetons. (Tokens) Il est par la suite capable de faire des prédictions sur le choix des mots qui constitueraient une suite de mots cohérente dépendament du context d’entrée.</p>
+<p>Un LLM ne fait que de la prédiction. Il est incapable de penser, comprendre, réfléchir, etc. Il est simplement capable de faire des prédictions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="preuve-de-concept" class="slide level2">
 <h2>Preuve de concept</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">┌[ral☮swamp]-</span><span class="er">(</span><span class="ex">~</span><span class="kw">)</span></span>
@@ -547,19 +547,19 @@ Laurence-Olivier M. Foisy
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="presentation_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="presentation_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="presentation_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
