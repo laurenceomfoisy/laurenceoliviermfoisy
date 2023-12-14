@@ -41,7 +41,7 @@ Un LLM ne fait que de la prédiction. Il est incapable de penser, comprendre, r�
 :::
 
 ## Deux questions:
-1. Quels sont les éléments constitutifs d'une recherche en analyse de sondages au Canada et plus précisément, les éléments d'une revue de littérature en analyse de sondages au Canada?
+1. Quels sont les éléments constitutifs d'une recherche en analyse de données de sondages canadiens et plus précisément, les éléments d'une revue de littérature en analyse de données de sondages canadiens?
 1. Comment les technologies d'intelligence artificielle (IA) peuvent-elles être utilisées pour automatiser les processus scientifique de recherche, d'analyse et de rédaction?
 
 ::: {.notes}
@@ -61,7 +61,7 @@ La deuxieme question: Il s'agit ici d'effectuer une preuve de concept. Donc un p
 - Étude de cas: Analyse de données de sondages canadiens
 - Revue systématique en 24 étapes
 
-![Méthode en 24 étapes](images/24_step_process.png)
+![Muka et al. (2020)](images/24_step_process.png)
 
 ## Preuve de concept
 
@@ -95,4 +95,4 @@ Output your answer in JSON format.
 Speaker notes go here. here here here here TEST
 :::
 
-## Preuve de concept
+# Merci.
