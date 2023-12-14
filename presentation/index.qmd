@@ -15,10 +15,9 @@ format:
 ::: {.incremental}
 - Parce qu'on peut
 - Analyse des données dormantes
-- Concentration sur les tâches à valeur ajoutée
 - Contribuer à réduire les barrières à l'entrée de la science
-- Repousser la connaissance globale
 - Accélération du rythme des avancées scientifiques
+- Repousser la connaissance globale
 :::
 
 ::: {.notes}
