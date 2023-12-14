@@ -44,8 +44,8 @@ Données dormantes: Effectuer des sondages coûte de l'argent. Maximisation des 
 
 ## Cadre Opératoire
 ### Preuve de concept
-- Cadre évolutif et adaptable, indépendant des modèles
 - Un LLM, comment ça marche?
+- Cadre évolutif et adaptable, indépendant des modèles
 
 ![(Touvron et al., 2023)](images/training_dataset.png)
 
