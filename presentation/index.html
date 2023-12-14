@@ -7,7 +7,7 @@
 <link href="presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="presentation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="presentation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="presentation_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Laurence-Olivier M. Foisy">
@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto.css">
   <link href="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -320,88 +385,41 @@
     }
   </style>
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Automatisation de la science</h1>
+  <p class="subtitle">Une preuve de concept en analyse de données de sondages</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
 Laurence-Olivier M. Foisy 
 </div>
-</div>
+        <p class="quarto-title-affiliation">
+            Université Laval
+          </p>
+    </div>
 </div>
 
 </section>
-<section id="que-sont-les-gml" class="slide level2">
-<h2>Que sont les GML ?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="modèles-propriétaires">Modèles propriétaires</h3>
-<ul>
-<li>GPT</li>
-<li>Bard</li>
-<li>Claude</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<h3 id="modèles-libres-daccès">Modèles libres d’accès</h3>
-<ul>
-<li>Llama</li>
-<li>Mistral</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="deux-questions" class="slide level2">
-<h2>Deux questions:</h2>
-<ul>
-<li>Quels sont les éléments constitutifs d’une recherche en analyse de sondages au Canada et plus précisément, les éléments d’une revue de littérature en analyse de sondages au Canada?</li>
-<li>Comment les technologies d’intelligence artificielle (IA) peuvent-elles être utilisées pour automatiser les processus scientifique de recherche, d’analyse et de rédaction?</li>
-</ul>
-</section>
-<section id="cadre-opératoire" class="slide level2">
-<h2>Cadre opératoire</h2>
-<h3 id="deux-étapes">Deux étapes</h3>
-<ul>
-<li>Méta-analyse des éléments constitutifs de la recherche en analyse de sondages</li>
-<li>Preuve de concept: Automatisation de la rédaction de revue de littérature en recherche en analyse de sondages</li>
-</ul>
-</section>
-<section id="méta-analyse" class="slide level2" data-background-color="aquamarine">
-<h2>Méta-Analyse</h2>
-<ul>
-<li>Étude de cas: Analyse de sondages au Canada</li>
-<li>Revue systématique en 24 étapes</li>
-</ul>
-</section>
-<section id="preuve-de-concept" class="slide level2">
-<h2>Preuve de concept</h2>
+<section id="automatiser-la-science" class="slide level2">
+<h2>Automatiser la science?</h2>
+<h3 id="pourquoi">Pourquoi?</h3>
 <div>
 <ul>
-<li class="fragment">Peaufinage des modèles</li>
-<li class="fragment">Développement d’un prototype</li>
-<li class="fragment">Évaluation du prototype</li>
+<li class="fragment">Parce qu’on peut</li>
+<li class="fragment">Analyse des données dormantes</li>
+<li class="fragment">Concentration sur les tâches à valeur ajoutée</li>
+<li class="fragment">Contribuer à réduire les barrières à l’entrée de la science</li>
+<li class="fragment">Repousser la connaissance globale</li>
+<li class="fragment">Accélération du rythme des avancées scientifiques</li>
 </ul>
 </div>
-</section>
-<section id="t2" class="slide level2">
-<h2>T2</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p>Left column</p>
-</div><div class="column" style="width:60%;">
-<p>Right column</p>
-</div>
-</div>
-</section>
-<section id="slide-with-speaker-notes" class="slide level2">
-<h2>Slide with speaker notes</h2>
-<p>Slide content</p>
 <aside class="notes">
-<p>Speaker notes go here.</p>
+<p>Données dormantes: Effectuer des sondages coûte de l’argent. Maximisation des coûts en réutilisant les données existantes.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -413,8 +431,115 @@ Laurence-Olivier M. Foisy
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="les-gml" class="slide level2">
+<h2>Les GML</h2>
+<h3 id="large-language-models-llm">(Large Language Models (LLM))</h3>
+<ul>
+<li>C’est quoi?</li>
+<li>Comment ça marche?</li>
+</ul>
 
-<img src="ul_logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<img data-src="images/training_dataset.png" class="r-stretch quarto-figure-center"><p class="caption">Touvron et al.&nbsp;(2023)</p><aside class="notes">
+<p>Llama a été entrainé sur 4800GB de données textuelles. Ça représente environ 8.6 millions d’articles scientifiques de 20 pages.</p>
+<p>Le modèle détecte les patterns entre les mots et les phrases en les décomposant en Jetons. (Tokens) Il est par la suite capable de faire des prédictions sur le choix des mots qui constitueraient une suite de mots cohérente dépendament du context d’entrée.</p>
+<p>Un LLM ne fait que de la prédiction. Il est incapable de penser, comprendre, réfléchir, etc. Il est simplement capable de faire des prédictions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="deux-questions" class="slide level2">
+<h2>Deux questions:</h2>
+<ol type="1">
+<li>Quels sont les éléments constitutifs d’une recherche en analyse de sondages au Canada et plus précisément, les éléments d’une revue de littérature en analyse de sondages au Canada?</li>
+<li>Comment les technologies d’intelligence artificielle (IA) peuvent-elles être utilisées pour automatiser les processus scientifique de recherche, d’analyse et de rédaction?</li>
+</ol>
+<aside class="notes">
+<p>La première question est divisée en deux parties. Le but ultime du projet est d’automatiser l’ensemble du processus scientifique d’analyse de données de sondages mais il faut commencer quelque part. Ce projet vise seulement à créer une preuve de concept en automatisant la rédaction de la revue de littérature. Pourquoi la revue de litt? C’est l’élément le plus simple à automatiser. Les LLM sont très bons pour résumer des textes et en extraire l’information.</p>
+<p>La deuxieme question: Il s’agit ici d’effectuer une preuve de concept. Donc un prototype qui démontre la faisabilité du projet. Il ne s’agit pas de créer un produit fini. Il s’agit de démontrer que c’est possible.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cadre-opératoire" class="slide level2">
+<h2>Cadre opératoire</h2>
+<h3 id="deux-étapes">Deux étapes</h3>
+<ol type="1">
+<li>Méta-analyse des éléments constitutifs de la recherche en analyse de sondages</li>
+<li>Preuve de concept: Automatisation de la rédaction de revue de littérature en recherche en analyse de sondages</li>
+</ol>
+</section>
+<section id="méta-analyse" class="slide level2">
+<h2>Méta-Analyse</h2>
+<ul>
+<li>Étude de cas: Analyse de données de sondages canadiens</li>
+<li>Revue systématique en 24 étapes</li>
+</ul>
+
+<img data-src="images/24_step_process.png" class="r-stretch quarto-figure-center"><p class="caption">Méthode en 24 étapes</p></section>
+<section id="preuve-de-concept" class="slide level2">
+<h2>Preuve de concept</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">┌[ral☮swamp]-</span><span class="er">(</span><span class="ex">~</span><span class="kw">)</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="ex">└</span><span class="op">&gt;</span> ollama run mistral</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="op">&gt;&gt;&gt;</span> Please <span class="ex">answer</span> with yes or no. </span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="ex">Is</span> it possible to automate research in political science<span class="pp">?</span> </span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="ex">Output</span> your answer in JSON format.</span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="kw">{</span>   </span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="st">"answer"</span><span class="ex">:</span> <span class="st">"No"</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="kw">}</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="op">&gt;&gt;&gt;</span> Send <span class="ex">a</span> message <span class="er">(</span><span class="ex">/?</span> for help<span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="preuve-de-concept-1" class="slide level2">
+<h2>Preuve de concept</h2>
+<div>
+<ul>
+<li class="fragment"><p>Peaufinage des modèles</p>
+<ul>
+<li class="fragment">Entraînement sur les données collectés durant la méta-analyse</li>
+</ul></li>
+<li class="fragment"><p>Développement d’un prototype</p></li>
+<li class="fragment"><p>Évaluation du prototype</p>
+<ul>
+<li class="fragment">Évaluateurs humains</li>
+<li class="fragment">Ultimement, évaluation par les pairs</li>
+</ul></li>
+</ul>
+</div>
+<aside class="notes">
+<p>Speaker notes go here. here here here here TEST</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="preuve-de-concept-2" class="slide level2">
+<h2>Preuve de concept</h2>
+
+<img src="images/ul_logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>Automatisation de la science</p>
 </div>
 </section>
