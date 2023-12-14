@@ -20,20 +20,6 @@ La première question est divisée en deux parties. Le but ultime du projet est 
 La deuxieme question: Il s'agit ici d'effectuer une preuve de concept. Donc un prototype qui démontre la faisabilité du projet. Il ne s'agit pas de créer un produit fini. Il s'agit de démontrer que c'est possible.
 :::
 
-## Automatiser la science?
-### Pourquoi? 
-::: {.incremental}
-- Parce qu'on peut
-- Analyse des données dormantes
-- Contribuer à réduire les barrières à l'entrée de la science
-- Accélération du rythme des avancées scientifiques
-- Repousser la connaissance globale
-:::
-
-::: {.notes}
-Données dormantes: Effectuer des sondages coûte de l'argent. Maximisation des coûts en réutilisant les données existantes.
-:::
-
 ## Cadre Opératoire
 ### Méta-Analyse
 
@@ -78,11 +64,9 @@ Un LLM ne fait que de la prédiction. Il est incapable de penser, comprendre, r�
 
 ::::
 
-
-
 ## Preuve de concept
 
-```bash
+```txt
 ┌[ral☮swamp]-(~)
 └> ollama run mistral
 >>> Please answer with yes or no. 
@@ -97,6 +81,20 @@ Output your answer in JSON format.
 
 ::: {.notes}
 Speaker notes go here. here here here here TEST
+:::
+
+## Automatiser la science?
+### Pourquoi? 
+::: {.incremental}
+- Parce qu'on peut
+- Analyse des données dormantes
+- Contribuer à réduire les barrières à l'entrée de la science
+- Accélération du rythme des avancées scientifiques
+- Repousser la connaissance globale
+:::
+
+::: {.notes}
+Données dormantes: Effectuer des sondages coûte de l'argent. Maximisation des coûts en réutilisant les données existantes.
 :::
 
 # Merci.
