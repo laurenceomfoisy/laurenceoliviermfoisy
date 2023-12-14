@@ -454,30 +454,23 @@ Laurence-Olivier M. Foisy
       }</style></aside>
 </section>
 <section id="cadre-opératoire" class="slide level2">
-<h2>Cadre opératoire</h2>
-<h3 id="deux-étapes">Deux étapes</h3>
-<ol type="1">
-<li>Méta-analyse des éléments constitutifs de la recherche en analyse de sondages</li>
-<li>Preuve de concept: Automatisation de la rédaction de revue de littérature en recherche en analyse de sondages</li>
-</ol>
-</section>
-<section id="méta-analyse" class="slide level2">
-<h2>Méta-Analyse</h2>
+<h2>Cadre Opératoire</h2>
+<h3 id="méta-analyse">Méta-Analyse</h3>
 <ul>
 <li>Étude de cas: Analyse de données de sondages canadiens</li>
-<li>Revue systématique en 24 étapes</li>
+<li>Revue systématique en 24 étapes (Muka et al., 2020)</li>
 </ul>
 
-<img data-src="images/24_step_process.png" class="r-stretch quarto-figure-center"><p class="caption">Muka et al.&nbsp;(2020)</p></section>
-<section id="les-grands-modèles-linguistiques" class="slide level2">
-<h2>Les Grands modèles linguistiques</h2>
-<h3 id="large-language-models-llm">Large Language Models (LLM)</h3>
+<img data-src="images/24_step_process.png" class="r-stretch quarto-figure-center"><p class="caption">(Muka et al., 2020)</p></section>
+<section id="cadre-opératoire-1" class="slide level2">
+<h2>Cadre Opératoire</h2>
+<h3 id="preuve-de-concept">Preuve de concept</h3>
 <ul>
-<li>C’est quoi?</li>
-<li>Comment ça marche?</li>
+<li>Cadre évolutif et adaptable indépendant des modèles</li>
+<li>Un LLM, comment ça marche?</li>
 </ul>
 
-<img data-src="images/training_dataset.png" class="r-stretch quarto-figure-center"><p class="caption">Touvron et al.&nbsp;(2023)</p><aside class="notes">
+<img data-src="images/training_dataset.png" class="r-stretch quarto-figure-center"><p class="caption">(Touvron et al., 2023)</p><aside class="notes">
 <p>Llama a été entrainé sur 4800GB de données textuelles. Ça représente environ 8.6 millions d’articles scientifiques de 20 pages.</p>
 <p>Le modèle détecte les patterns entre les mots et les phrases en les décomposant en Jetons. (Tokens) Il est par la suite capable de faire des prédictions sur le choix des mots qui constitueraient une suite de mots cohérente dépendament du context d’entrée.</p>
 <p>Un LLM ne fait que de la prédiction. Il est incapable de penser, comprendre, réfléchir, etc. Il est simplement capable de faire des prédictions.</p>
@@ -493,7 +486,33 @@ Laurence-Olivier M. Foisy
           display:block!important;
       }</style></aside>
 </section>
-<section id="preuve-de-concept" class="slide level2">
+<section id="preuve-de-concept-1" class="slide level2">
+<h2>Preuve de concept</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>Peaufinage des modèles</p>
+<ul>
+<li>Entraînement sur les données collectés durant la méta-analyse</li>
+</ul></li>
+<li><p>Développement d’un prototype</p></li>
+<li><p>Évaluation du prototype</p>
+<ul>
+<li>Évaluateurs humains</li>
+<li>Ultimement, évaluation par les pairs</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/diagram_devis.png"></p>
+<figcaption>Preuve de concept</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="preuve-de-concept-2" class="slide level2">
 <h2>Preuve de concept</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">┌[ral☮swamp]-</span><span class="er">(</span><span class="ex">~</span><span class="kw">)</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="ex">└</span><span class="op">&gt;</span> ollama run mistral</span>
@@ -505,23 +524,6 @@ Laurence-Olivier M. Foisy
 <span id="cb1-8"><a href="#cb1-8"></a><span class="kw">}</span></span>
 <span id="cb1-9"><a href="#cb1-9"></a></span>
 <span id="cb1-10"><a href="#cb1-10"></a><span class="op">&gt;&gt;&gt;</span> Send <span class="ex">a</span> message <span class="er">(</span><span class="ex">/?</span> for help<span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="preuve-de-concept-1" class="slide level2">
-<h2>Preuve de concept</h2>
-<div>
-<ul>
-<li class="fragment"><p>Peaufinage des modèles</p>
-<ul>
-<li class="fragment">Entraînement sur les données collectés durant la méta-analyse</li>
-</ul></li>
-<li class="fragment"><p>Développement d’un prototype</p></li>
-<li class="fragment"><p>Évaluation du prototype</p>
-<ul>
-<li class="fragment">Évaluateurs humains</li>
-<li class="fragment">Ultimement, évaluation par les pairs</li>
-</ul></li>
-</ul>
-</div>
 <aside class="notes">
 <p>Speaker notes go here. here here here here TEST</p>
 <style type="text/css">

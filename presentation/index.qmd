@@ -34,25 +34,20 @@ La deuxieme question: Il s'agit ici d'effectuer une preuve de concept. Donc un p
 Données dormantes: Effectuer des sondages coûte de l'argent. Maximisation des coûts en réutilisant les données existantes.
 :::
 
-## Cadre opératoire
-### Deux étapes
-
-1. Méta-analyse des éléments constitutifs de la recherche en analyse de sondages
-1. Preuve de concept: Automatisation de la rédaction de revue de littérature en recherche en analyse de sondages
-
-## Méta-Analyse
+## Cadre Opératoire
+### Méta-Analyse
 
 - Étude de cas: Analyse de données de sondages canadiens
-- Revue systématique en 24 étapes
+- Revue systématique en 24 étapes (Muka et al., 2020)
 
-![Muka et al. (2020)](images/24_step_process.png)
+![(Muka et al., 2020)](images/24_step_process.png)
 
-## Les Grands modèles linguistiques 
-### Large Language Models (LLM)
-- C'est quoi?
-- Comment ça marche?
+## Cadre Opératoire
+### Preuve de concept
+- Cadre évolutif et adaptable, indépendant des modèles
+- Un LLM, comment ça marche?
 
-![Touvron et al. (2023)](images/training_dataset.png)
+![(Touvron et al., 2023)](images/training_dataset.png)
 
 ::: {.notes}
 Llama a été entrainé sur 4800GB de données textuelles. Ça représente environ 8.6 millions d'articles scientifiques de 20 pages.
@@ -61,6 +56,29 @@ Le modèle détecte les patterns entre les mots et les phrases en les décomposa
 
 Un LLM ne fait que de la prédiction. Il est incapable de penser, comprendre, réfléchir, etc. Il est simplement capable de faire des prédictions.
 :::
+
+## Preuve de concept
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- Peaufinage des modèles
+  - Entraînement sur les données collectés durant la méta-analyse
+
+- Développement d'un prototype
+
+- Évaluation du prototype
+  - Évaluateurs humains
+  - Ultimement, évaluation par les pairs
+:::
+
+::: {.column width="40%"}
+![Preuve de concept](images/diagram_devis.png)
+:::
+
+::::
+
+
 
 ## Preuve de concept
 
@@ -76,19 +94,6 @@ Output your answer in JSON format.
 
 >>> Send a message (/? for help)
 ```
-
-## Preuve de concept
-
-::: {.incremental}
-- Peaufinage des modèles
-  - Entraînement sur les données collectés durant la méta-analyse
-
-- Développement d'un prototype
-
-- Évaluation du prototype
-  - Évaluateurs humains
-  - Ultimement, évaluation par les pairs
-:::
 
 ::: {.notes}
 Speaker notes go here. here here here here TEST
