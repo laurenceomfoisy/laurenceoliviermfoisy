@@ -176,7 +176,7 @@ Is ChatGPT able to provide reliable and trustworthy information regarding the id
 
 - Highly subjective. 
 
-- I would say yes but only if we're able to understand the limitations.
+- Yes? Only if we're able to understand the limitations.
 
 ::: {.notes}
 Notes
