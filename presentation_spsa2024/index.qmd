@@ -1,7 +1,7 @@
 ---
 title: "Ain't No Party Like a GPT Party"
 subtitle: "Assessing GPT-4 Political Alignment Classification Capabilities"
-author: "<table style='margin-top: -290px; width: 100%; text-align: center;'><tr><td style='vertical-align: top; padding-right: 5px;'>Laurence-Olivier M. Foisy<br>Jérémie Drouin<br>Camille Pelletier</td><td style='vertical-align: top;'>Jozef Rivest<br>Hubert Cadieux<br>Yannick Dufresne</td></tr></table>"
+author: "<table style='margin-top: -290px; width: 100%; text-align: center;'><tr><td style='vertical-align: top; padding-right: 5px;'>Laurence-Olivier M. Foisy<br>Camille Pelletier<br>Hubert Cadieux</td><td style='vertical-align: top;'>Jérémie Drouin<br>Jozef Rivest<br>Yannick Dufresne</td></tr></table>"
 institute: "Université Laval"
 format:
   revealjs: 
@@ -20,6 +20,7 @@ Let's start with a question: Can we rely on ChatGPT to correctly Classify politi
 ### Context 
 
 - 100 million monthly users
+- Can be used for a wide range of tasks
 - People might rely on AI to obtain quick information about nuanced and complex topics
 
 ### Purpose
@@ -28,16 +29,25 @@ Gain a greater understanding of ChatGPT's limitations and capabilities
 ## Party ideology classification
 Classifying parties by their ideology is a complex task that requires a lot of knowledge about its political context. It's also highly subjective and depends on a lot of factors.
 
-- Number of parties in the system
+- Number of parties in the system.
 - National context
 - Electoral systems
 - Voter alignments
 
 ::: {.notes}
-Party positioning is highly complex, context dependent and nuanced. It depends on a lot of factors and a left wing party in a country could be considered right wing in another. A party ideology is also fluid and can change through time from elections to elections depending on what voters are asking for.
+Number of parties: 2 party systems are going to gravitate to the center, while multiparty systems are going to have more parties on the fringes.
+
+National context: The political context of a country is going to influence the positioning of parties. For example, being a left-wing party in the United States is not the same thing as being a left-wing party in Europe. That is defined by the cleavages present within the national context
+
+Electoral systems: Proportional systems allow for broader competition since there can often be coalition government. In that context, parties can present more niche and distinctive ideologies without compromising electoral success
+
+Voter alignments: Party are going to position themselves according to the voters they want to attract and they may shift their stance on a policy according to the political context.
+
+Overall, it's a complex task that requires a lot of knowledge about the political context of a country. It's also highly subjective and dynamic. Can large language models understand this?
 :::
 
 ## Large Language Models
+Text prediction alorigthms that are trained on massive amounts of textual data. GPT-3 was trained on 45TB of textual data.
 
 :::: {.columns}
 
@@ -61,7 +71,9 @@ Party positioning is highly complex, context dependent and nuanced. It depends o
 ::::
 
 ::: {.notes}
-Everybody here probably knows what large language models are. OpenAI define them as large-scale machine learning models designed to predict the next word in a text based on previous words. Basically, large language models are only highly complex algorithm that rely on a massive database of textual data to make prediction about the likeliness of a word going next to another one. They were trained on terabytes of textual data and are able to find patterns that are most likely undetectable to the human eye. It's basically magic. The result is a AI that's able to generate human like content but that is unable of making any reflexion or having any thoughts. Therefore, it might not be the best at understand complex topics with lots of nuances like party systems and party positioning.
+Everybody here probably knows what large language models are. 
+
+OpenAI define them as large-scale machine learning models designed to predict the next word in a text based on previous words. Basically, large language models are only highly complex algorithm that rely on a massive database of textual data to make prediction about the likeliness of a word going next to another one. They were trained on terabytes of textual data and are able to find patterns that are most likely undetectable to the human eye. It's basically magic. The result is a AI that's able to generate human like content but that is unable of making any reflexion or having any thoughts. Therefore, it might not be the best at understand complex topics with lots of nuances like party systems and party positioning.
 
 Furthermore, LLMs are full of biases. Three 
 :::
@@ -91,7 +103,7 @@ Parties can be classified by their current stance on ECONOMIC ISSUES such as pri
 
 ## Methodology
 
-### Prompt
+### GPT Prompting
 
 - Same question as the GPS
 - Party name and country as context
@@ -112,7 +124,11 @@ Parties can be classified by their current stance on ECONOMIC ISSUES such as pri
 ![GPT Party Alignment by GPS Party Alignment](graphs/h1_scatterplot.png)
 
 ::: {.notes}
-Notes
+For both scales the t value indicate that there is a significant difference between the mean of the GPS and the mean of the GPT. 
+
+The mean difference of the subtraction of the GPS score and GPT is 0.55 for the economic scale and 0.29 for the social scale. This means that GPT-4 is more likely to classify parties as more right-wing than the experts.
+
+The absolute difference, which is our measure of distance and is not related to positining is 1.62 for the economic scale and 1.53 for the social scale
 :::
 
 ## {background-color="white".smaller}
@@ -159,10 +175,6 @@ Notes
 ::: {.notes}
 Notes
 :::
-
-## Findings
-### Real world impacts
-People might use generative AI to make sense of politics since it's so good at summarizing information.
 
 ## Limitations
 - Linguistic limitations
