@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "trousse_etudiante",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>trousse_etudiante</span>"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn.html",
+    "href": "introduction_clessn.html",
+    "title": "5 premières étapes à suivre dès votre arrivée ⏳",
+    "section": "",
+    "text": "Quoi faire pour réussir son intégration ✅",
+    "crumbs": [
+      "**5 premières étapes à suivre dès votre arrivée** ⏳"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn.html#le-rapport-clessn",
+    "href": "introduction_clessn.html#le-rapport-clessn",
+    "title": "5 premières étapes à suivre dès votre arrivée ⏳",
+    "section": "Le rapport CLESSN 📜",
+    "text": "Le rapport CLESSN 📜",
+    "crumbs": [
+      "**5 premières étapes à suivre dès votre arrivée** ⏳"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn.html#philosophie-de-la-clessn",
+    "href": "introduction_clessn.html#philosophie-de-la-clessn",
+    "title": "5 premières étapes à suivre dès votre arrivée ⏳",
+    "section": "Philosophie de la CLESSN 🦉",
+    "text": "Philosophie de la CLESSN 🦉\n\nLes structures/programmes/regroupements de recherche 👥\n\n\nMéthodes et outils Agile ⛓️\n\n\nRecueils CLESSN 📚\n\n\nLes projets ⚡\n\n\nEllipse (et le monde privé) 🚀\n\n\nLa santé, le bien-être, et le random! 🌳🎲\n\n\n3 piliers et 6 fonctions",
+    "crumbs": [
+      "**5 premières étapes à suivre dès votre arrivée** ⏳"
+    ]
+  },
+  {
+    "objectID": "pilier_1.html",
+    "href": "pilier_1.html",
+    "title": "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+    "section": "",
+    "text": "Lectures 📚\n\n\nApprendre à programmer avec Datacamp 👨‍💻👩‍💻\n\n\nDropbox et organisation des fichiers 📦\n\n\nGit et GitHub 🚂\n\n\nCheat sheets de programmation 🧻\n\n\nÉcoles d’été ☀️\n\n\nICPSR 🇺🇸\n\n\nSéminaire de recherche 🔬\n\n\nProfil distinction (au baccalauréat) 🏆\n\n\nAutres cours recommandés 🧑‍🏫",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)"
+    ]
+  },
+  {
+    "objectID": "pilier_2.html",
+    "href": "pilier_2.html",
+    "title": "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+    "section": "",
+    "text": "Les bourses gouvernementales\n\n\nVos groupes de recherche (et leur financement étudiant) 🏦\n\n\nAutres financements 💰\n\n\nFinances personnelles 💸\n\n\nContrats et création de valeur 🥇\n\n\nBourses de cheminement type à la maitrise et au doctorat 🧑‍🎓\n\n\nZotero 🔖\n\n\nGabarit Rmd CLESSN pour les mémoire et les thèse 📓",
+    "crumbs": [
+      "Pilier 2: La recherche (Fonctions: le financement et les publications)"
+    ]
+  },
+  {
+    "objectID": "pilier_3.html",
+    "href": "pilier_3.html",
+    "title": "Pilier 3: La diffusion (Fonctions: communication et partenaires)",
+    "section": "",
+    "text": "Conférences importantes 🎤\n\n\nLes réseaux sociaux 🌐\n\n\nLes partenaires 🤝",
+    "crumbs": [
+      "Pilier 3: La diffusion (Fonctions: communication et partenaires)"
+    ]
+  }
+]
