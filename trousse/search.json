@@ -2,71 +2,361 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "trousse_etudiante",
+    "title": "Bienvenue à la CLESSN! 🔥",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.",
+    "text": "Vous trouverez ci-dessous une description de nos méthodes de travails et des ressources qui pourront vous être utiles durant votre parcours à la CLESSN.\nPour faciliter votre cheminement à la CLESSN, il est important de bien lire toutes les sections de cette page. N’hésitez pas à réfléchir à la logique des différents renseignements, et à en discuter avec nous! Rien n’est parfait, tout est en évolution, donc toutes les questions sont bonnes!\nSurtout, n’ayez crainte. Il y a beaucoup d’informations, mais tout finira rapidement par être très simple!",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>trousse_etudiante</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenue à la CLESSN! 🔥</span>"
     ]
   },
   {
     "objectID": "introduction_clessn.html",
     "href": "introduction_clessn.html",
-    "title": "5 premières étapes à suivre dès votre arrivée ⏳",
+    "title": "Introduction CLESSN",
     "section": "",
-    "text": "Quoi faire pour réussir son intégration ✅",
+    "text": "Let’s goooo!",
     "crumbs": [
-      "**5 premières étapes à suivre dès votre arrivée** ⏳"
+      "Introduction CLESSN"
     ]
   },
   {
-    "objectID": "introduction_clessn.html#le-rapport-clessn",
-    "href": "introduction_clessn.html#le-rapport-clessn",
-    "title": "5 premières étapes à suivre dès votre arrivée ⏳",
-    "section": "Le rapport CLESSN 📜",
-    "text": "Le rapport CLESSN 📜",
-    "crumbs": [
-      "**5 premières étapes à suivre dès votre arrivée** ⏳"
-    ]
-  },
-  {
-    "objectID": "introduction_clessn.html#philosophie-de-la-clessn",
-    "href": "introduction_clessn.html#philosophie-de-la-clessn",
-    "title": "5 premières étapes à suivre dès votre arrivée ⏳",
-    "section": "Philosophie de la CLESSN 🦉",
-    "text": "Philosophie de la CLESSN 🦉\n\nLes structures/programmes/regroupements de recherche 👥\n\n\nMéthodes et outils Agile ⛓️\n\n\nRecueils CLESSN 📚\n\n\nLes projets ⚡\n\n\nEllipse (et le monde privé) 🚀\n\n\nLa santé, le bien-être, et le random! 🌳🎲\n\n\n3 piliers et 6 fonctions",
-    "crumbs": [
-      "**5 premières étapes à suivre dès votre arrivée** ⏳"
-    ]
-  },
-  {
-    "objectID": "pilier_1.html",
-    "href": "pilier_1.html",
-    "title": "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+    "objectID": "introduction_clessn/programmes_installer.html",
+    "href": "introduction_clessn/programmes_installer.html",
+    "title": "2  Programmes à installer 💻",
     "section": "",
-    "text": "Lectures 📚\n\n\nApprendre à programmer avec Datacamp 👨‍💻👩‍💻\n\n\nDropbox et organisation des fichiers 📦\n\n\nGit et GitHub 🚂\n\n\nCheat sheets de programmation 🧻\n\n\nÉcoles d’été ☀️\n\n\nICPSR 🇺🇸\n\n\nSéminaire de recherche 🔬\n\n\nProfil distinction (au baccalauréat) 🏆\n\n\nAutres cours recommandés 🧑‍🏫",
+    "text": "Slack: sert aux communications de l’équipe (installez la version de bureau sur votre ordinateur, et téléchargez l’application pour votre téléphone!);\nNotion: sert à la gestion des projets de l’équipe (téléchargez également la version de bureau. L’app mobile est facultative);\nR: sert à l’analyse de données;\nLaTeX: une plateforme de création de documents;\nRStudio: le logiciel qui héberge R et LaTeX;\nDropbox: acheter la version personnelle «Plus» et l’installer sur votre ordinateur (~12,99$CA/mois quand on prend l’abonnement annuel). La version gratuite va devenir rapidement insuffisante;\nGit et GitHub: pour l’installation et l’utilisation dans votre terminal:\n\nhttps://github.com/git-guides/install-git;\nCréez un token personnel (obligatoire);\nBonus! Pour avoir un beau terminal, téléchargez ce repo! Vous trouverez les instructions dans le READ.me au-bas de la page Github.\n\n\nC’est fait? Bravo! Le plus dur est passé!\nCe n’est pas fait, il y a des blocages? Nous vous aiderons, venez nous voir à la Chaire!",
     "crumbs": [
-      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)"
+      "Introduction CLESSN",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Programmes à installer 💻</span>"
     ]
   },
   {
-    "objectID": "pilier_2.html",
-    "href": "pilier_2.html",
-    "title": "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+    "objectID": "introduction_clessn/3_piliers_6_fonctions.html",
+    "href": "introduction_clessn/3_piliers_6_fonctions.html",
+    "title": "3  3 piliers et 6 fonctions",
     "section": "",
-    "text": "Les bourses gouvernementales\n\n\nVos groupes de recherche (et leur financement étudiant) 🏦\n\n\nAutres financements 💰\n\n\nFinances personnelles 💸\n\n\nContrats et création de valeur 🥇\n\n\nBourses de cheminement type à la maitrise et au doctorat 🧑‍🎓\n\n\nZotero 🔖\n\n\nGabarit Rmd CLESSN pour les mémoire et les thèse 📓",
+    "text": "À la CLESSN, tout projet de recherche devrait remplir les 6 fonctions suivantes, provenant de 3 grands piliers:\n\nLa formation (La CLESSN offre un pôle d’expertise et une formation complète qui explorent les défis techniques, théoriques et éthiques associés aux nouvelles données numériques en sciences sociales.)\n\nLe développement\nL’enseignement\n\nLa recherche (La Chaire est dédiée à la recherche technique, théorique et éthique de pointe, particulièrement dans les champs de l’opinion publique et de la méthodologie.)\n\nLe financement\nLes publications\n\nLa diffusion (La Chaire entretient plusieurs partenariats avec des organismes gouvernementaux, médiatiques et de la société civile, ce qui lui permet d’assurer la diffusion de ses conclusions de recherche.)\n\nLa communication\nLes partenaires",
     "crumbs": [
-      "Pilier 2: La recherche (Fonctions: le financement et les publications)"
+      "Introduction CLESSN",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>3 piliers et 6 fonctions</span>"
     ]
   },
   {
-    "objectID": "pilier_3.html",
-    "href": "pilier_3.html",
-    "title": "Pilier 3: La diffusion (Fonctions: communication et partenaires)",
+    "objectID": "introduction_clessn/5_premieres_etapes.html",
+    "href": "introduction_clessn/5_premieres_etapes.html",
+    "title": "4  5 premières étapes à suivre dès votre arrivée ⏳",
     "section": "",
-    "text": "Conférences importantes 🎤\n\n\nLes réseaux sociaux 🌐\n\n\nLes partenaires 🤝",
+    "text": "Dans votre Dropbox, créez un dossier nommé «CLESSN». Il servira à entreposer tous les repository Github de notre équipe.\nSi vous n’en avez pas déjà une adresse gmail, il faudrait aussi vous en créer une. Elle vous servira sur notre Google Calendar commun!\nD’ailleurs, demandez-nous de vous ajouter au calendrier CLESSN! Vous aurez accès à tous nos événements. Vous pouvez connecter votre compte gmail à votre application Mail de bureau et autoriser les événements liés à apparaitre à votre application Calendrier. Évidemment, vous pouvez aussi simplement y accéder via le site Web de Google calendar. Mais c’est toujours une bonne chose d’utiliser les applications de bureau, et de centraliser l’ensemble de ses courriels et événements!\nVous pouvez nous faire parvenir une photo professionnelle que nous ajouterons au bas de notre site internet.\nAjoutez-vous et remplissez toutes les infos de votre profil Notion sur la page des membres de l’équipe: Équipe CLESSN. La majeure partie de la documentation sur notre travail se trouve sur ce Notion. Prenez le temps de le parcourir!\nDemeurez professionnel.le en tout temps: c’est peut-être le bon moment pour un nettoyage de vos réseaux sociaux!",
     "crumbs": [
-      "Pilier 3: La diffusion (Fonctions: communication et partenaires)"
+      "Introduction CLESSN",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**5 premières étapes à suivre dès votre arrivée** ⏳</span>"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn/ellipse.html",
+    "href": "introduction_clessn/ellipse.html",
+    "title": "5  Ellipse (et le monde privé) 🚀",
+    "section": "",
+    "text": "La CLESSN vise la création d’une entreprise! Si vous le souhaitez, vous pourriez contribuer à sa création! Parlez-en-nous!\nPour consulter tous les contrats actuels de Ellipse, c’est dans la table ci-dessous:\nContrats Ellipse\nLes contrats « en cours » ont droit à leur page latérale, dans l’espace d’équipe Ellipse de Notion (à gauche). Ils y sont présentés avec leurs outils, leurs publications et leurs stories.",
+    "crumbs": [
+      "Introduction CLESSN",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Ellipse (et le monde privé) 🚀</span>"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn/groupes_de_recherche.html",
+    "href": "introduction_clessn/groupes_de_recherche.html",
+    "title": "6  Les structures/programmes/regroupements de recherche 👥",
+    "section": "",
+    "text": "Voici une description succincte de chacun de ce ce qui existe au Québec (et Canada, entre autres) :\n\nChaires de leadership en enseignement (CLE) :\n\nCes chaires ont été instaurées pour valoriser l’excellence et l’innovation en pédagogie universitaire.\nContrairement aux chaires de recherche qui se concentrent principalement sur la production de nouvelles connaissances dans un domaine précis, les Chaires CLE se focalisent sur l’amélioration de l’enseignement et de l’apprentissage à l’université.\nLes titulaires de ces chaires s’engagent souvent dans le développement de nouvelles méthodes pédagogiques, l’intégration des technologies de l’information et de la communication en enseignement, et la diffusion des meilleures pratiques en matière d’enseignement supérieur.\nCes chaires peuvent être financées par les universités elles-mêmes ou par des organismes externes, comme les fonds de recherche.\nLeur objectif est de permettre aux institutions d’enseignement supérieur de se doter de professeurs dédiés à la pédagogie, capables d’agir comme leaders et innovateurs dans leurs départements respectifs et dans l’institution en général.\n\nCentre de recherche :\n\nIl s’agit généralement d’une entité institutionnelle ou organisationnelle dédiée à la recherche dans un ou plusieurs domaines spécifiques.\nIl peut regrouper plusieurs laboratoires ou groupes de recherche.\nUn centre de recherche peut avoir ses propres ressources, équipements et personnel.\n\nChaire de recherche :\n\nC’est un titre ou une position accordé à un chercheur, souvent financé par une entreprise, une fondation ou une institution.\nLa chaire permet généralement de financer des activités de recherche sur un thème précis pour une période donnée.\nElle est souvent associée à une institution d’enseignement supérieur, comme une université.\n\nLaboratoire de recherche :\n\nC’est un espace physique où des chercheurs conduisent des expériences ou des études.\nIl est souvent équipé de matériel et d’instruments spécifiques à un domaine de recherche.\nUn laboratoire peut appartenir à un centre de recherche ou à une institution académique.\n\nGroupe de recherche :\n\nIl s’agit d’un ensemble de chercheurs travaillant ensemble sur un sujet ou un ensemble de sujets liés.\nUn groupe de recherche peut être formel (avec une structure et une hiérarchie définies) ou informel.\nIl peut être associé à un laboratoire, une chaire, ou un centre de recherche.\n\nChaires de recherche du Canada :\n\nC’est un programme fédéral qui vise à attirer et retenir les chercheurs les plus talentueux au Canada.\nLes universités nominent des chercheurs pour des chaires dans des domaines spécifiques, et les chaires sont financées par le gouvernement fédéral.\nIl existe des Chaires de recherche du Canada de niveau 1 et de niveau 2, qui sont attribuées respectivement à des chercheurs établis et à des chercheurs en début de carrière.\n\nFonds de recherche du Québec (FRQ) :\n\nC’est un ensemble d’organismes qui financent la recherche au Québec. Il y a trois fonds principaux : le Fonds de recherche du Québec - Nature et technologies (FRQNT), le Fonds de recherche du Québec - Santé (FRQS), et le Fonds de recherche du Québec - Société et culture (FRQSC).\nCes fonds offrent différents programmes de financement, dont des bourses pour étudiants, des subventions pour projets, et des chaires de recherche.\n\nRéseaux de centres d’excellence (RCE) :\n\nC’est un programme fédéral qui soutient des partenariats entre les chercheurs, l’industrie, et d’autres parties prenantes.\nCes réseaux sont conçus pour accélérer la création et l’application de nouvelles connaissances dans des domaines prioritaires pour le Canada.\n\n\nCeci est juste un aperçu de certaines des structures et des programmes de recherche au Québec et au Canada. Il existe de nombreux autres programmes, fonds et structures qui soutiennent la recherche dans différentes disciplines et à différents niveaux.\nEn résumé, ces termes décrivent différents niveaux et structures de collaboration et d’organisation dans le domaine de la recherche. Ils peuvent se chevaucher ou être intégrés les uns aux autres en fonction des institutions et des domaines de recherche.",
+    "crumbs": [
+      "Introduction CLESSN",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Les structures/programmes/regroupements de recherche 👥</span>"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn/les_projets.html",
+    "href": "introduction_clessn/les_projets.html",
+    "title": "7  Les projets ⚡",
+    "section": "",
+    "text": "Tous les projets de la CLESSN se trouvent dans la table ci-dessous:\nProjets CLESSN\nLes projets « en cours » ont droit à leur page latérale, dans l’espace d’équipe CLESSN de Notion (à gauche). Ils y sont présentés avec leurs outils, leurs publications et leurs stories.",
+    "crumbs": [
+      "Introduction CLESSN",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Les projets ⚡</span>"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn/methode_agile.html",
+    "href": "introduction_clessn/methode_agile.html",
+    "title": "8  Méthodes et outils Agile ⛓️",
+    "section": "",
+    "text": "À la chaire, nous avons opéré un virage organisationnel calqué sur les «Méthodes agiles». Ces méthodes permettent l’optimisation du temps et des ressources, afin de permettre un travail d’équipe efficace.\nBien que nous ne respectons pas encore l’ensemble des techniques des méthodes agiles, plusieurs sont déjà bien implantées. Par exemple, chaque projet est dirigé par un «chargé de projet», qui s’occupe de suivre l’avancement des différentes tâches. Les «scrums» sont des rencontres rapides qui permettent à l’ensemble de l’équipe de faire le point. Ce Notion est d’ailleurs créé selon les meilleures techniques agiles!",
+    "crumbs": [
+      "Introduction CLESSN",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>**Méthodes et outils Agile** ⛓️</span>"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn/philosophie_clessn.html",
+    "href": "introduction_clessn/philosophie_clessn.html",
+    "title": "9  Philosophie de la CLESSN 🦉",
+    "section": "",
+    "text": "Quelques mots sur la CLESSN par les membres de notre équipe:\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est… augmenter sa valeur dans une organisation dynamique en travaillant sur des projets qui nous passionnent. - Hubert Cadieux, étudiant au bac en économie-politique\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est… découvrir tous les outils permettant de faire de la recherche efficacement dans le monde académique, dans une ambiance d’équipe motivante! - Alex FC\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est… Développer des chercheurs complets autour de leurs intérêts de recherche - Jérémy Gilbert\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est… d’intégrer les bonnes pratiques en analyse de données avec la recherche en sciences sociales. - Judith Bourque\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est…apprendre à exploiter le potentiel théorique des nouvelles données numériques. Mais c’est aussi et surtout des valeurs de collaboration, de partage et de transparence. - Catherine Ouellet\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est…apprendre à coopérer entre collègues et développer une bonne éthique de travail autour de l’analyse de données numériques. - Arnaud Beaulé\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est… de travailler en équipe, sur des objectifs individuels et communs, pour faire d’une pierre mille coups. - Adrien Cloutier\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est… l’opportunité d’aller plus loin dans nos recherches par l’entremise de nouvelles méthodes de travail et d’une équipe bienveillante - Sarah-Jane Vincent\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est…une expérience d’apprentissage unique, passionnante et stimulante dans une équipe soudée. - Jérémie Drouin\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est… un espace de réflexion, où les connaissances dépassent les limites individuelles. - Camille Pelletier\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est… une opportunité de combattre le cynisme ambiant à l’aide de plusieurs projets ludiques qui découlent des sciences sociales numériques. - Benjamin Carignan, étudiant au bac en science politique\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est… un espace de travail et d’apprentissage en équipe permettant à chacun de développer de maintes habiletés techniques et pratiques pour son futur. - Arnaud Beaulé\n\n\n🦉 Pour moi, la philosophie de la CLESSN, c’est…",
+    "crumbs": [
+      "Introduction CLESSN",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Philosophie de la CLESSN 🦉</span>"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn/reussir_integration.html",
+    "href": "introduction_clessn/reussir_integration.html",
+    "title": "10  Quoi faire pour réussir son intégration ✅",
+    "section": "",
+    "text": "S’assurer que l’agenda CLESSN soit bien fonctionnel sur son ordinateur et son téléphone;\nParticiper à toutes les rencontres auxquelles vous êtes invité (scrum, planif de sprint, etc.);\nÉcouter (écouter écouter écouter, prenez des semaines, des mois; à tout écouter. Ne paniquez pas si tout est nouveau et massif au départ; en écoutant, vous allez vous familiariser et apprendre);\nPrendre des notes: achetez-vous un calepin et notez tout! Les nouveaux mots, les détails des projets, faites des recherches sur ce qui est nouveau et posez des questions;\nQuand vous sentirez que vous comprenez le.les projets, la philosophie de la Chaire et son fonctionnement, faites nous signe pour vous impliquer davantage!",
+    "crumbs": [
+      "Introduction CLESSN",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Quoi faire pour réussir son intégration ✅</span>"
+    ]
+  },
+  {
+    "objectID": "introduction_clessn/sante_bien_etre.html",
+    "href": "introduction_clessn/sante_bien_etre.html",
+    "title": "11  La santé, le bien-être, et le random! 🌳🎲",
+    "section": "",
+    "text": "La CLESSN a à coeur la santé et le bien-être de ses membres! À cet effet, nous organisons régulièrement des activités sociales auxquelles vous serez invité à participer! Consultez également nos pages Notion:\n99_santé-bien-être\n99_random",
+    "crumbs": [
+      "Introduction CLESSN",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>La santé, le bien-être, et le random! 🌳🎲</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_1/autres_cours.html",
+    "href": "pilier_1/autres_cours.html",
+    "title": "12  Autres cours recommandés 🧑‍🏫",
+    "section": "",
+    "text": "Programmation avec R pour l’analyse de données | Cours",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Autres cours recommandés 🧑‍🏫</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_1/cheat_sheets.html",
+    "href": "pilier_1/cheat_sheets.html",
+    "title": "13  Cheat sheets de programmation 🧻",
+    "section": "",
+    "text": "On ne peux pas tout savoir par coeur! Même les meilleurs codeurs utilisent des aide-mémoires, et posent toutes leurs questions à Google!\nBaseR.pdf\nLaTeX.pdf\nggplot2.pdf\nRMarkdown.pdf\ndplyr_tidyr.pdf\nQuarto_Cheat_Sheet.pdf\ngit.pdf\nR.pdf",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cheat sheets de programmation 🧻</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_1/ecoles_ete.html",
+    "href": "pilier_1/ecoles_ete.html",
+    "title": "14  Écoles d’été ☀️",
+    "section": "",
+    "text": "Rapidement nous vous inviterons à participer à des Écoles d’été pour bonifier votre expérience académique. Vous connaitrez très bien les deux écoles ci-dessous, que nous avons soit tous fréquentée… soit créée!",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Écoles d’été ☀️</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_1/git_github.html",
+    "href": "pilier_1/git_github.html",
+    "title": "15  Git et GitHub 🚂",
+    "section": "",
+    "text": "Éventuellement, vous serez appelé à «pusher» votre travail en ligne sur GitHub pour qu’il soit ensuite consultable et modifiable par vos collègues.\nVoici quelques informations de base sur nos outils de stockage de données.\n\nGithub sert au stockage de codes, de textes et de tout fichier devant être modifié par plus d’une personne;\nGithub n’aime pas que l’on entrepose des informations trop lourdes sur ses serveurs… Des repo trop costauds seront aussi plus longs à télécharger.\nPour bien saisir la logique de Git et de GitHub, nous vous conseillons de visionner les tutoriels Git and GitHub for Poets de la chaine YouTube The Coding Train. Voici le lien du premier vidéo: https://www.youtube.com/watch?v=BCQHnlnPusY&t=3s. Ce genre de vidéo vous apprendra notamment à minimiser le risque d’erreurs sur Git. Notez bien la formule magique à inscrire dans votre terminal (oui, nous utilisons le terminal!):\n\ngit add -A\ngit commit -m “écrire ici la description du commit”\ngit pull\ngit push\n\n\nImportant: malheureusement, apprendre une formule magique n’est jamais une solution miracle. Il est plutôt nécessaire de comprendre les commandes et de pouvoir faire ce que l’on veut, peu importe les circonstances. Dans certains cas, la formule ci-dessus pourrait être inappropriée!\n\nQuand on fait un pull après un certain temps dans un repo, il est tout aussi important de taper ces codes dans le terminal, même si nous n’avons rien modifié depuis longtemps. Parfois, un fichier caché a été modifié (.RData, .Rhistory ou .DS_Store). En «commitant» comme ça, on s’assure de ne pas avoir de conflits.\n\n\n\n\nFh6bl4DWIAAZxse (1).jpeg\n\n\n\nLe fichier texte (caché, c’est pourquoi il est invisible) .gitignore est nécessaire, comme son nom l’indique, pour ignorer la mise en ligne de certains fichiers à l’intérieur de notre repository Github. Par exemple, tous les dossiers débutant par *_SharedFolder* seront ignorés par le .gitignore lors d’un «push», et ne seront donc pas mis en ligne. Les fichiers pdf et png sont aussi ignoré par le .gitignore. Elles doivent donc préférablement être entreposées dans un _SharedFolder. La taille de fichier maximale recommandée par GitHub est de 50 MB.\nDe plus, nous avons pensé le fichier .gitignore pour qu’il ignore aussi les dossiers dont le nom débute par _PrivateFolder. Vous pourrez y glisser tout votre travail personnel (par exemple, les dossiers relatifs à vos cours). Ce dossier restera confidentiel; il ne sera ni publié en ligne ni partagé avec moi ou vos collègues.\n\nPour en savoir plus, je vous invite aussi à consulter la «cheat sheet» sur Git ci-dessous.",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Git et GitHub 🚂</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_1/icpsr.html",
+    "href": "pilier_1/icpsr.html",
+    "title": "16  ICPSR 🇺🇸",
+    "section": "",
+    "text": "Le ICPSR Summer Program de l’Université du Michigan est une école d’été parmi les meilleures au monde lors de laquelle vous pourrez approfondir vos connaissances en méthodologie quantitative.\nLa participation à cette école constitue un rite de passage pour tous les étudiants de la CLESSN depuis 2017!\nPour toutes les informations, voir le site web: https://www.icpsr.umich.edu/icpsrweb/sumprog/.\nPlusieurs bourses sont offertes directement par ICPSR. Ça vaut la peine de tenter sa chance! \n\nhttps://www.icpsr.umich.edu/icpsrweb/content/sumprog/scholarships/index.html\n\n\n16.0.1 EIOM (École interdisciplinaire outils et méthodes) 🇨🇦\nL’EIOM est une création… de la CLESSN! En partenariat avec l’ESEI, @Alexis Bibeau, @Sarah Lajeunesse et @Adri ont créé de toute pièce une École d’été sur les outils et les méthodes de recherche à l’Université Laval offrant 3 crédits de recherche pour 5 jours de cours!\nLa participation à cette école est évidemment fortement encouragée.\nVous trouverez toutes les informations au EIOM.ca\n\n\n\nCapture d’écran, le 2023-08-25 à 23.50.57.png",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>**ICPSR** 🇺🇸</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_1/lectures.html",
+    "href": "pilier_1/lectures.html",
+    "title": "17  Lectures 📚",
+    "section": "",
+    "text": "Vous pouvez aussi déjà vous lancer dans la lecture de KKV. Designing Social Inquiry (1994) est un ouvrage d’introduction à la méthodologie de recherche en science sociale rédigé par Gary King, Robert Keohane et Sidney Verba (le surnom KKV vient des initiales de leur nom de famille).\nImportant à noter: KKV est une lecture OBLIGATOIRE pour tous les membres CLESSN. Achetez votre ouvrage, et surlignez! (vous le lirez plusieurs fois au cours de votre parcours).\nVoici d’autres livres pour l’apprentissage de R:\nSuper livres en bookdown (sur le Web) pour apprendre R gratuitement:\n\nR Graphics Cookbook\nEfficient R programming (pour les fans de shortcuts)\nR for Data Science\nText Mining with R: A Tidy Approach\n\nAutres livres imprimés:\n\nAn R Companion to Political Analysis de Pollock & Edwards\nQuantitative Social Science: An Introduction, de Imai\nMartin, R. C., & Feathers, M. C. (2009). Clean code : a handbook of agile software craftsmanship (Ser. Robert c. martin series). Prentice Hall.\n\nNous recommandons également la lecture du livre du professeur Vincent Arel-Bundock, de l’Université de Montréal. Vous trouverez le livre gratuitement ici:",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>**Lectures** 📚</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_1/profil_distinction.html",
+    "href": "pilier_1/profil_distinction.html",
+    "title": "18  Profil distinction (au baccalauréat) 🏆",
+    "section": "",
+    "text": "Voici les infos pour le « profil distinction », qui permet de faire un passage «plus rapide» vers la maitrise en science politique. Vous terminerez de plus vos études avec une mention sur votre diplôme!\nhttps://www.ulaval.ca/etudes/profils-detudes/profil-distinction\nQuelques critères à valider:\n\n\n\nCapture d’écran, le 2022-06-05 à 15.20.40.png",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Profil distinction (au baccalauréat) 🏆</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_1/programmer_datacamp.html",
+    "href": "pilier_1/programmer_datacamp.html",
+    "title": "19  Apprendre à programmer avec Datacamp 👨‍💻👩‍💻",
+    "section": "",
+    "text": "🎯 La CLESSN possède un compte Datacamp d’équipe! C’est gratuit! Demandez à y être ajouté.\n\nDatacamp est un formidable outil pour vous initier au codage en R. Voici une série de cours utiles à l’introduction à R:\n\nIntroduction to R\nIntermediate R\nIntroduction to the Tidyverse\nData Manipulation with dplyr\nIntroduction to Statistics in R\nIntro to regression in R\nIntermediate regression in R\nIntro to data visualization with ggplot2\nIntermediate Regression in R",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Apprendre à programmer avec **Datacamp** 👨‍💻👩‍💻</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_1/seminaire_recherche.html",
+    "href": "pilier_1/seminaire_recherche.html",
+    "title": "20  Séminaire de recherche 🔬",
+    "section": "",
+    "text": "Le Séminaire de recherche est une expérience en or d’en apprendre ou bien de perfectionner ses habiletés en analysant des données massives. Il offre, tout comme un cours classique, 3 crédits de recherche pour une expérience professionnelle à la CLESSN.\nPour s’inscrire à ce séminaire, il faut suivre une certaine procédure.\nIl est important de suivre ces étapes avant de s’inscrire ou bien de retirer un cours!\n\nObtenir l’accord du titulaire (Yannick Dufresne).\nPrendre contact avec l’agente responsable des études pour votre programme respectif (identifié si bas).\n\nChargée du programme de 1er cycle: programmes1ercyclepol@fss.ulaval.ca\nChargée du programme de 2e et 3 cycles: programmes2e3ecyclespol@fss.ulaval.ca\n\n\nSuite à cette demande, ladite personne validera votre cheminement préalable et vous fera parvenir le formulaire d’inscription à l’activité.\nCompléter le document et à le signer de concert avec Yannick Dufresne.\n\nCe formulaire est comme un plan des travaux qui seront réalisés lors du séminaire de recherche.\n\nUne fois avoir complété ce dernier et l’avoir transmis à la personne responsable, l’agente de gestion des études se chargera du reste et confirmera votre admissibilité.",
+    "crumbs": [
+      "Pilier 1: La formation (Fonctions: le développement et l’enseignement)",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Séminaire de recherche 🔬</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_2/autres_financements.html",
+    "href": "pilier_2/autres_financements.html",
+    "title": "21  Autres financements 💰",
+    "section": "",
+    "text": "Il existe beaucoup d’autres bourses, à vous maintenant de fouiller et à me faire part de vos trouvailles! Et assurez-vous aussi d’être ajouté à ces groupes de recherches, pour (notamment) avoir droit aux financements.\nPlus de détails ici: https://www.bbaf.ulaval.ca/\ncalendrier_synthèse.pdf\nInstructions aux facultés CRSH_2022-2023.pdf",
+    "crumbs": [
+      "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Autres financements 💰</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_2/bourses_cheminement.html",
+    "href": "pilier_2/bourses_cheminement.html",
+    "title": "22  Bourses de cheminement type à la maitrise et au doctorat 🧑‍🎓",
+    "section": "",
+    "text": "La Faculté des sciences sociales offre un financement pour tous les étudiants qui effectuent leurs études dans des temps considérés comme étant «normaux» par la Faculté: https://www.bourses.fss.ulaval.ca/connexion.\nÀ la maitrise en science politique, c’est 1400$ en trois versements, c’est-à-dire que vous pouvez réclamer 280$ si vous complétez l’ensemble de vos cours en 3 sessions, un autre 420$ si votre projet de recherche est défendu avant la 4e session, et un dernier 700$ si votre mémoire est déposé avant la 6e session. Au doctorat, c’est 14 000$, en 7 versements.\nConseil d’ami: prenez en considération ces délais, mais ne laissez pas l’argent vous aveugler. Mieux vaut un bon projet bien réfléchi, même s’il est défendu la 5e session.\nL’image ci-dessous est une copie du dossier d’un étudiant (qui, contrairement à vous, n’était pas au courant au début de ses études de l’existence de ce financement!).\n\n\n\nCapture d’écran, le 2024-02-28 à 11.57.06.png",
+    "crumbs": [
+      "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Bourses de c**heminement type à la maitrise et au doctorat** 🧑‍🎓</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_2/bourses_gouv.html",
+    "href": "pilier_2/bourses_gouv.html",
+    "title": "23  Les bourses gouvernementales 💲",
+    "section": "",
+    "text": "Pour financer votre participation à des conférences, des écoles d’été, voire pour financer vos études en général, il existe de nombreuses possibilités de bourses. Voici les plus populaires. À noter que les dates d’inscription sont offertes à titre indicatif, mais celles-ci sont changent d’année en année:\n\nFRQSC (~9 octobre): Le Fond de recherche du Québec Société et Culture est l’équivalent provincial du CRSH. Il offre 17 500$ pour les études à la maitrise, et 21 000$ au doctorat. \n\nMaitrise: https://www.sshrc-crsh.gc.ca/funding-financement/programs-programmes/fellowships/cgs_masters-besc_maitrise-fra.aspx\nDoctorat: https://frq.gouv.qc.ca/programme/bourses-de-formation-au-doctorat-frq-2/\n\nCRSH (~13 décembre): Le Conseil de recherches en sciences humaines du Canada offre chaque année une possibilité de financement de 17 500$ pour les études à la maitrise. Il s’agit de la plus haute bourse de votre champ d’études, et ainsi de la plus prestigieuse. Mais elle reste à portée de tout bon dossier… et du hasard.\n\nMaitrise: https://www.sshrc-crsh.gc.ca/funding-financement/programs-programmes/fellowships/cgs_masters-besc_maitrise-fra.aspx\nDoctorat: https://www.sshrc-crsh.gc.ca/funding-financement/programs-programmes/fellowships/doctoral-doctorat-fra.aspx",
+    "crumbs": [
+      "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Les bourses gouvernementales 💲</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_2/templates.html",
+    "href": "pilier_2/templates.html",
+    "title": "24  Gabarit Rmd CLESSN pour les mémoire et les thèse 📓",
+    "section": "",
+    "text": "Les étudiants seront sans doute heureux d’apprendre qu’il est désormais possible de réaliser un mémoire et une thèse par articles (généralement 2 articles à la maitrise et 3 au doctorat). À la maitrise, il n’est pas obligatoire d’avoir soumis les articles à une publication scientifique. Au doctorat, les articles doivent être soumis, mais pas nécessairement acceptés.\nToute l’information pertinente au sujet de votre rédaction peut être obtenue ici.\nLa CLESSN a également créé un gabarit en markdown pour rédiger votre mémoire! Markdown est un langage batti sur LaTeX, plus simple d’utilisation.\nÉtudiant.e à la maitrise, obtenez le gabarit en téléchargeant ce repository via sur le bouton vert «Clone or download, puis sur «Download ZIP». Toutes les informations pour son utilisation se trouvent dans le fichier README.md.\nÉtudiant.e au doctorat, le gabarit est en cours de création!\n!https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f1de0ba6-c2b8-4f27-8127-8e2ba57884aa/pathMemoire.jpg\n\n\n\nCapture d’écran de la page titre du gabarit de mémoire Rmd créé par la CLESSN et autorisé par l’Université Laval\n\n\nCapture d’écran de la page titre du gabarit de mémoire Rmd créé par la CLESSN et autorisé par l’Université Laval",
+    "crumbs": [
+      "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Gabarit Rmd CLESSN pour les m**émoire et les thèse** 📓</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_2/contrats_valeurs.html",
+    "href": "pilier_2/contrats_valeurs.html",
+    "title": "25  Contrats et création de valeur 🥇",
+    "section": "",
+    "text": "Nous tentons toujours d’offrir des contrats à tous les étudiants de la CLESSN.\nMais votre financement est aussi votre responsabilité!\nParlez-en-nous, nous vous aiderons à vous financer.\nMais n’oubliez pas: votre participation aux activités de la CLESSN contribue à la création de votre valeur. Les apprentissages que vous ferez parmi nous sont uniques, et contribueront grandement à votre avenir.\nVotre présence parmi nous et votre travail acharné sera le meilleur de vos investissements.",
+    "crumbs": [
+      "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Contrats et création de valeur 🥇</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_2/vos_groupes_recherche.html",
+    "href": "pilier_2/vos_groupes_recherche.html",
+    "title": "26  Vos groupes de recherche (et leur financement étudiant) 🏦",
+    "section": "",
+    "text": "Et voici vos groupes de recherche, et leurs opportunités de financement!\n\nCLESSN: Évidemment, vous en faites toutes et tous partie 🍻 Pas de financement «officiel», mais comme vous le comprenez, on est toujours là pour vous aider!\nCAPP: Vous êtes aussi tous membre du CAPP! Le Centre d’analyse des politiques publiques n’offre pas de bourses pour le moment, mais c’est dans les plans!\nCÉCD (~30 septembre et ~1er mars): Le Centre pour l’étude de la citoyenneté démocratique offre à tous ses membres 750$ par année pour la présentation à l’étranger d’un article scientifique. Il est toutefois nécessaire d’indiquer au CECD avant le 30 septembre que vous comptez utiliser cette bourse (je vous conseille de le faire, même si vous ne pensez pas l’utiliser!). Aussi, le CÉCD offre 2500$ en bourse de formation méthodologique (comme la participation à ICPSR). Le CECD offre également un concours de bourse pour l’aide à la réalisation de vos mémoires et thèses!\nVous en faites partie si vous êtes aux études supérieures. Yannick envoie la liste de ses étudiants chaque début d’année. Si vous arrivez en cours de route, faites-le signe de vous ajouter!\n\nhttps://csdc-cecd.ca/fr/resources/csdc-student-funding-fr/\n\nGRCP (en tout temps): Le Groupe de recherche en communication politique offre 800$ par année pour la formation méthodologique et la diffusion de vos résultats de recherche. À prendre ou à laisser! Tous les étudiant.e.s qui travaillent sur la communication politique peuvent faire partie du GRCP, même au bac! Encore une fois, demandez à Yannick de vous y ajouter.\n\nhttps://www.grcp.ulaval.ca/ressources/formulaires\n\nOBVIA (~30 août): L’Observatoire international sur les impacts sociétaux de l’IA et du numérique organise chaque année un concours de bourse de 15 000$ pour la réalisation d’un mémoire en lien avec leurs objectifs. \n\nhttps://observatoire-ia.ulaval.ca/programmes-de-bourses-dappui-a-la-releve-de-lobvia/\n\nVITAM: Pour en faire partie, il faut que vos recherches à la maitrise ou au doc matchent avec la santé publique. L’étudiant(e) ou le (la) chercheur(-euse) peut procéder à la demande d’adhésion par le formulaire disponible à la page VITAM - Devenez membre (ulaval.ca) du site web.\n\nhttps://vitam.ulaval.ca/concours-de-financement\n\nIID: Est membre étudiant de l’IID tout étudiant.e qui est supervisé par un chercheur membre ou collaborateur de l’Institut, dans le cadre d’un parcours aux cycles supérieurs (maîtrise, doctorat), d’un stage d’été ou d’un stage post-doctoral.\n\nhttps://iid.ulaval.ca/services/#bourses\n\nCRDM: Le Centre de recherche en données massives de ULaval n’offre pas encore de financement étudiant. Tous les étudiant.e.s de maitrise et doc peuvent appliquer pour en faire partie.\n\nhttps://crdm.ulaval.ca/\n\nDépartement de science politique (en tout temps): Ce n’est pas un groupe de recherche, mais le département offre des bourses de 2000$ par année pour la formation méthodologique. \n\nhttps://repertoire.bbaf.ulaval.ca/bourse/52857/bourses-de-formations-methodologiques-hiver-2020",
+    "crumbs": [
+      "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Vos groupes de recherche (et leur financement étudiant) 🏦</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_2/zotero.html",
+    "href": "pilier_2/zotero.html",
+    "title": "27  Zotero 🔖",
+    "section": "",
+    "text": "La CLESSN possède un compte Zotero d’équipe pour la gestion de toutes les bibliographie de nos publications!\nDemandez à y être ajouté!",
+    "crumbs": [
+      "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Zotero 🔖</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_2/revues_pertinentes.html",
+    "href": "pilier_2/revues_pertinentes.html",
+    "title": "28  Revues scientifiques pertinentes 📜",
+    "section": "",
+    "text": "Nous en avons commencé la liste, dans une table Notion… la voici!\nRevues scientifiques",
+    "crumbs": [
+      "Pilier 2: La recherche (Fonctions: le financement et les publications)",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Revues scientifiques pertinentes 📜</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_3/conferences_importantes.html",
+    "href": "pilier_3/conferences_importantes.html",
+    "title": "29  Conférences importantes 🎤",
+    "section": "",
+    "text": "Voici une liste des conférences les plus importantes en science politique:\n\nAPSA\nCPSA\nMPSA\nSPSA\nWPSA\nIPSA\n\nVous les trouverez dans cette table:\nConférences\nconferences_sci_pol.pdf",
+    "crumbs": [
+      "Pilier 3: La diffusion (Fonctions: communication et partenaires)",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>**Conférences importantes** 🎤</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_3/partenaires.html",
+    "href": "pilier_3/partenaires.html",
+    "title": "30  Les partenaires 🤝",
+    "section": "",
+    "text": "Consultez la table suivante pour un aperçu de tous les partenaires de la CLESSN:\nPartenaires CLESSN",
+    "crumbs": [
+      "Pilier 3: La diffusion (Fonctions: communication et partenaires)",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Les partenaires 🤝</span>"
+    ]
+  },
+  {
+    "objectID": "pilier_3/reseaux_sociaux.html",
+    "href": "pilier_3/reseaux_sociaux.html",
+    "title": "31  Les réseaux sociaux 🌐",
+    "section": "",
+    "text": "D’abord, faites le ménage de vos réseaux!\nIl est essentiel, dès maintenant, de présenter une image neutre et professionnelle.\nLes photos de partys du Cégep ne sont plus les bienvenues ;)\nLa CLESSN, le CAPP, l’EIOM et Datagotchi sont tous sur les réseaux sociaux (X, Facebook, Instagram).\nVoici nos comptes X:\n\nCLESSN\nCAPP \nDatagotchi FR et Datagotchi EN\nEIOM\nPolimètre et Polimeter \n\nC’est ESSENTIEL (jusqu’à preuve du contraire) de posséder un compte Twitter/X! C’est bon pour vous (faites la promo de vos accomplissements et suivez les comptes de vos collègues, professeurs, contacts, partenaires, etc.).\nAbonnez-vous à nos comptes (évidemment) et activez les notifications pour tous nos comptes! (voir image).\nRetweetez systématiquement tout ce qu’on publie! On compte sur vous, on a besoin de toute l’équipe pour faire un max de pub de nos activités. Grâce à l’activation des notifs (voir image), vous n’allez rien rater!\n\n\n\n\nAbonnez-vous à nos comptes, et activez les notifications pour tout retweeter!\n\n\nAbonnez-vous à nos comptes, et activez les notifications pour tout retweeter!",
+    "crumbs": [
+      "Pilier 3: La diffusion (Fonctions: communication et partenaires)",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Les réseaux sociaux 🌐</span>"
+    ]
+  },
+  {
+    "objectID": "ressources_generales.html",
+    "href": "ressources_generales.html",
+    "title": "Ressources générales à consulter pour la réflexion! 💡",
+    "section": "",
+    "text": "Panique? 😱\nBien sûr que non! Vous n’avez jamais codé en R et vous avez tapé “Mark Down” dans Google en pensant qu’il s’agissait d’un grand scientifique anglais? Aucune crainte! Vous êtes au bon endroit pour vous initier et rapidement développer une expertise dans les sciences sociales numériques. Plusieurs étudiant.es de l’équipe n’avaient jamais codé avant leur arrivée! Pour apprendre rapidement, le mieux est de commencer maintenant, et d’en faire un peu tous les jours. Quelques pages de KKV, une vidéo YouTube, un cours de Datacamp, et surtout, la participation aux scrums!\nLa CLESSN travaille dans l’objectif d’optimiser constamment son travail. Tous les étudiants ont réussi, en avançant pas-à-pas dans leurs apprentissages, à développer les outils essentiels à leur cheminement scolaire et, en plus, à apporter leur propre contribution à la chaire. Pas de panique, donc, si vous n’avez jamais codé et si tout ça semble complexe! C’est complètement à votre portée. Et n’hésitez jamais à nous poser vos questions.\nNous vous souhaitons d’excellentes études. Nous vous l’assurons, le temps passera très vite!",
+    "crumbs": [
+      "Ressources générales à consulter pour la réflexion! 💡"
     ]
   }
 ]
