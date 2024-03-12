@@ -157,3 +157,27 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Drawers
+
+// Get the dropdown button
+var dropdown = document.querySelector('.dropdown-toggle');
+
+// Toggle the dropdown content on click
+dropdown.addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default link action
+  this.nextElementSibling.classList.toggle('show');
+});
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener('click', function(event) {
+  if (!event.target.matches('.dropdown-toggle')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+});
