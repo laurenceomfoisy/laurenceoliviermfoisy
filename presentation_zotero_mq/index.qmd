@@ -105,21 +105,21 @@ Difficile à formatter?
 
 ## Parce que c’est Open Source, Zotero s’intègre dans TOUT!
 
-- Dans votre navigateur<br><br><br>
-- Dans votre OS<br><br><br>
-- Dans votre traitement de texte<br><br><br>
+- Dans votre navigateur<br><br>
+- Dans votre OS<br><br>
+- Dans votre traitement de texte<br><br>
 - En LaTeX et Markdown
 
-![](images/chromium.png){.absolute top=150 right=450 width=10%}
-![](images/firefox.png){.absolute top=150 right=300 width=10%}
-![](images/brave.png){.absolute top=150 right=150 width=10%}
+![](images/chromium.png){.absolute top=160 right=450 width=7%}
+![](images/firefox.png){.absolute top=160 right=300 width=7%}
+![](images/brave.png){.absolute top=160 right=150 width=7%}
 
-![](images/linux.png){.absolute top=320 right=600 width=10%}
-![](images/windows.png){.absolute top=320 right=450 width=10%}
-![](images/macos.png){.absolute top=320 right=300 width=10%}
+![](images/linux.png){.absolute top=280 right=600 width=7%}
+![](images/windows.png){.absolute top=280 right=450 width=7%}
+![](images/macos.png){.absolute top=280 right=300 width=7%}
 
-![](images/word.png){.absolute top=490 right=320 width=10%}
-![](images/libre.png){.absolute top=490 right=150 width=10%}
+![](images/word.png){.absolute top=410 right=320 width=7%}
+![](images/libre.png){.absolute top=410 right=150 width=7%}
 
-![](images/overleaf.png){.absolute top=660 right=450 width=10%}
-![](images/quarto.png){.absolute top=660 right=100 width=30%}
+![](images/overleaf.png){.absolute top=530 right=450 width=7%}
+![](images/quarto.png){.absolute top=530 right=100 width=23%}
