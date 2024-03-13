@@ -5,7 +5,7 @@ institute: "Université Laval"
 format:
   revealjs: 
     theme: night
-    logo: images/ul_logo.png
+    logo: images/clessn.png
     footer: "Le référencement"
 ---
 
