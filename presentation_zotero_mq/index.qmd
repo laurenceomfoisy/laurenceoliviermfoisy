@@ -1,6 +1,6 @@
 ---
 title: "Le référencement"
-author: "<table style='margin-top: -290px; width: 100%; text-align: center;'><tr><td style='vertical-align: top; padding-right: 5px;'>Laurence-Olivier M. Foisy<br>Camille Pelletier</td></tr></table>"
+author: "Laurence-Olivier M. Foisy & Camille Pelletier"
 institute: "Université Laval"
 format:
   revealjs: 
@@ -8,6 +8,7 @@ format:
     logo: images/ul_logo.png
     footer: "Le référencement"
 ---
+
 ##
 ### C'est quoi un article scientifique?{.center}
 
