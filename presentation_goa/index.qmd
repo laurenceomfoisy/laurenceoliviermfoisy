@@ -650,7 +650,8 @@ X <- rnorm(n)
 Z <- 3 * X + rnorm(n)
 Y <- 0.5 * Z + rnorm(n)
 mod <- lm(Y ~ X)
-coef(mod)
+coefs <- coef(mod)
+c(coefs["X"])
 ```
 
 :::
@@ -682,7 +683,8 @@ X <- rnorm(n)
 Y <- 1.7 * X + rnorm(n)
 Z <- 1.2 * X + 0.8 * Y + rnorm(n)
 mod <- lm(Y ~ X)
-coef(mod)
+coefs <- coef(mod)
+c(coefs["X"])
 ```
 
 
@@ -696,7 +698,8 @@ X <- rnorm(n)
 Y <- 1.7 * X + rnorm(n)
 Z <- 1.2 * X + 0.8 * Y + rnorm(n)
 mod <- lm(Y ~ X + Z)
-coef(mod)
+coefs <- coef(mod)
+c(coefs["X"], coefs["Z"])
 ```
 
 :::
