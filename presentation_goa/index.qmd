@@ -652,6 +652,23 @@ coefs <- coef(mod)
 c(coefs["X"])
 ```
 
+``` R
+X <- rnorm(n)
+Z <- 3 * X + rnorm(n)
+Y <- 0.5 * Z + rnorm(n)
+mod <- lm(Y ~ X)
+coef(mod)
+```
+
+```{r}
+X <- rnorm(n)
+Z <- 3 * X + rnorm(n)
+Y <- 0.5 * Z + rnorm(n)
+mod <- lm(Y ~ X + Z)
+coefs <- coef(mod)
+c(coefs["X"], coefs["Z"])
+```
+
 :::
 
 :::{.column width=50%}
