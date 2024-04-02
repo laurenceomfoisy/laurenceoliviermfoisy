@@ -597,6 +597,39 @@ Contrôler pour le maillon central d'un chemin RENVERSE le flot d'information:
   
 ![](images/goa32.png){ width=70% height=70% }
 
+## Simulations
+ 
+::::{.columns}
+
+:::{.column width=50%}
+
+``` R
+n <- 100000
+X <- rnorm(n)
+Y <- 1.7 * X + rnorm(n)
+
+mod <- lm(Y ~ X)
+coef(mod)
+```
+
+```{r}
+n <- 100000
+X <- rnorm(n)
+Y <- 1.7 * X + rnorm(n)
+
+mod <- lm(Y ~ X)
+coef(mod)
+```
+
+:::
+
+:::{.column width=50%}
+
+![](images/xy_17.png){ width=100% height=100% }
+
+:::
+
+::::
 
 # Prochain cours
 
