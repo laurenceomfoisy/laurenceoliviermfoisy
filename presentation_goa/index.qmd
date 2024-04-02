@@ -613,11 +613,12 @@ coef(mod)
 
 ```{r}
 n <- 100000
-x <- rnorm(n)
-y <- 1.7 * x + rnorm(n)
+X <- rnorm(n)
+Y <- 1.7 * X + rnorm(n)
 
-mod <- lm(y ~ x)
-coef(mod)
+mod <- lm(Y ~ X)
+coefs <- coef(mod)
+c(coefs["X"])
 ```
 
 :::
