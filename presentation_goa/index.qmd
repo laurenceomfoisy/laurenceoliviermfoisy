@@ -1,0 +1,623 @@
+---
+title: "Les graphes orientés acycliques (GOA)"
+subtitle: "Méthodologie quantitative POL-2000"
+author: "Laurence-Olivier M. Foisy & Adrien Cloutier"
+institute: "Université Laval"
+format:
+  revealjs: 
+    theme: night
+    logo: images/ul_logo.png
+    footer: "Les Graphes Orientés Acycliques (GOA) | POL-2000"
+---
+
+## Aujourd'hui{.smaller}
+
+### Cours 12
+
+- Retour sur le travail de mi-session
+- Présentation: Introduction à la causalité: Le problème fondamental de l'inférence causale
+- Les graphes orientés acycliques (GOA)
+  - Termes clés
+  - Les types de chemins
+  - Exemples
+
+![](images/horaire12.png){width=70% height=70% }
+
+# Les graphes orientés acycliques (GOA) 
+
+## Les graphes orientés acycliques (GOA){.smaller}
+
+- Se construit par la connaissance, la littérature, l'intuition, la passion
+- Aller au-delà de la description de deux variables ou plus.
+- Réfléchir au réel potentiel de *causalité*
+
+![](images/goa12.png){width=60% height=60% }
+
+## Les graphes orientés acycliques (GOA){.smaller}
+
+Pour produire un GOA:
+
+1. Faire la liste des variables pertinentes pour la question de recherche
+2. Représenter graphiquement les relations causales entre ces variables
+
+## Les graphes orientés acycliques (GOA){.smaller}
+
+Les questions auxquelles peut répondre grâce au GOA:
+
+1. Est-ce que l'effet causal de X sur Y est identifiable? 
+2. Le modèle statistique doit « contrôler » pour quelles variables?
+
+
+## GOA étape 1: Faire la liste des variables pertinentes{.smaller}
+
+Effet causal:
+
+- Éducation --> Idéologie politique (gauche/droite)
+
+Variables pertinentes:
+
+- Éducation (VI, cause)
+- Idéologie politique (VD, effet)
+- Revenu des parents
+- Revenu individuel
+
+
+## GOA étape 2: Représenter les relations causales{.smaller}
+
+Sources: la littérature scientifique, les connaissances du chercheur, la théorie, la logique, la passion, etc.
+
+Relations causales:
+  
+![](images/goa10.png){ width=50% height=50% }
+  
+  
+  
+## GOA étape 2: Représenter les relations causales{.smaller}
+
+Sources: la littérature scientifique, les connaissances du chercheurs, la théorie, la logique, etc.
+
+Relations causales:
+  
+![](images/goa12.png){ width=70% height=70% }
+  
+  
+## Les graphes orientés acycliques (GOA){.smaller}
+
+- Ok ok ok, c'est beau, c'est facile.
+- On va surement faire une régression multiple, non?
+- Maintenant, on contrôle pour quoi? 
+  - Modèle 1: Aucun contrôle?
+  - Modèle 2: Le revenu des parents? 
+  - Modèle 3: Le revenu individuel?
+  - Modèle 4: Les 2? 
+  
+
+## Les graphes orientés acycliques (GOA){.smaller}
+
+- Ok ok ok, c'est beau, c'est facile.
+- On va surement faire une régression multiple, non?
+- Maintenant, on contrôle pour quoi? 
+  - Modèle 1: Aucun contrôle? **NON**
+  - Modèle 2: **Le revenu des parents?** **OUI!**
+  - Modèle 3: Le revenu individuel? **NON**
+  - Modèle 4: Les 2? **NON**
+  
+
+## Les graphes orientés acycliques (GOA){.smaller}
+
+En résumé, à quoi ça sert:
+
+1. Transparence: révéler nos postulats théoriques.
+2. Identification: possible d'estimer l'effet causal de la VI sur la VD?
+3. Modélisation: quelles variables de contrôle inclure et exclure? 
+
+
+## Les graphes orientés acycliques (GOA){.smaller}
+
+Définition:
+
+- Outil pour analyser les conditions théoriques sous lesquelles il est possible d'identifier un effet causal.
+
+## Information statistique v. relation causale{.smaller}
+
+- Association N'EST PAS corrélation NI causalité.
+- Régression linéaire multiple = résume une relation en contrôlant pour de tiers facteurs.
+  - C'est descriptif.
+  - Limites et biais possibles.
+- GOA = une réponse pour ouvrir la porte à la causalité.
+
+## Information statistique v. relation causale{.smaller}
+
+![](images/infostat.png){ width=90% height=90% }
+
+## Noeuds et flèches{.smaller}
+
+1. Noeuds == variables
+2. Flèches == relations causales
+
+![](images/goa12.png){ width=70% height=70% }
+
+
+## Les graphes **ORIENTÉS** acycliques (GOA){.smaller}
+
+::::{.columns}
+
+:::{.column width=50%}
+- Unidirectionnel
+- Les flèches indiquent la direction
+- Descendant: une variable en aval dans le chemin 
+  - B et C sont descendants de A
+- Ancêtre: une variable en amont
+  - A et B sont ancêtres de C
+- Un ancêtre cause un descendant, pas l'inverse!
+
+:::
+:::{.column width=50%}
+![](images/goa11.png){ width=90% height=90% }
+
+:::
+
+::::
+
+## Les graphes **ORIENTÉS** acycliques (GOA){.smaller}
+
+- Pas de flèche == PAS de relation causale
+
+## Les graphes orientés **ACYCLIQUES** (GOA){.smaller}
+
+- Il ne peut pas y avoir de circuit
+- Les flèches ne doivent pas nous faire revenir sur nos pas
+  
+![](images/goa13.png){ width=90% height=90% }
+
+
+
+## Chemin ouvert ou fermé{.smaller}
+
+- Ouvert == l'information statistique circule entre A et C.
+- Fermé == l'information ne circule **PAS** entre A et C.
+
+Contrôler pour le maillon central d'un chemin RENVERSE le flot d'information:
+
+- Chemin ouvert devient fermé.
+- Chemin fermé devient ouvert.
+
+![](images/goa2.png){ width=90% height=90% }
+
+
+
+## Les 3 types de chemin{.smaller}
+
+1. La chaîne
+2. La fourchette
+3. La collision
+
+## Les trois types de chemins{.smaller}
+
+**La chaîne**
+
+- Une séquence de deux relations causales
+- Les chaînes sont des chemins ouverts
+- Connaître l'information centrale, ici Z, ferme le chemin
+
+![](images/goa3.png){width=70% height=70% }
+
+
+
+## Les trois types de chemins{.smaller}
+
+**La chaîne**
+
+- Une séquence de deux relations causales
+- Les chaînes sont des chemins ouverts
+- Connaître l'information centrale, ici Z, ferme le chemin
+
+![](images/goa4.png){ width=90% height=90% }
+
+
+
+
+
+## Les trois types de chemins{.smaller}
+
+**La fourchette**
+
+- Une séquence **d'une cause** et de **deux effets**
+- Les fourchette sont des chemins ouverts
+- Connaître l'information centrale, ici Z, ferme le chemin
+
+![](images/goa5.png){ width=90% height=90% }
+
+## Les trois types de chemins{.smaller}
+
+**La fourchette**
+
+- Une séquence **d'une cause** et de **deux effets**
+- Les fourchette sont des chemins ouverts
+- Connaître l'information centrale, ici Z, ferme le chemin
+
+![](images/goa6.png){ width=90% height=90% }
+
+
+## Les trois types de chemins{.smaller}
+
+**La collision**
+
+- **Plus d'une cause** à un effet
+- Les fourchette sont des chemins **fermés**
+- Connaître l'information centrale, ici Z, ouvre le chemin
+
+![](images/goa7.png){ width=70% height=70% }
+
+## Les trois types de chemins{.smaller}
+
+**La collision**
+
+- **Plus d'une cause** à un effet
+- Les fourchette sont des chemins **fermés**
+- Connaître l'information centrale, ici Z, ouvre le chemin
+
+![](images/goa8.png){ width=90% height=90% }
+
+
+
+# Les GOA... la suite
+
+## Avant toute chose{.smaller}
+
+**Pour signifier qu'on contrôle pour une variable, on l'encadre**
+
+![](images/goa9.png){ width=70% height=70% }
+
+
+## 2 conditions pour l'identification causale{.smaller}
+
+**Sous quelles conditions un modèle statistique permet d'identifier un effet causal?**
+
+1. Le modèle ne contrôle PAS un descendant de X
+2. Tous les « chemin par porte arrière » entre X et Y sont fermés !
+
+## Condition 1{.smaller}
+
+**Condition 1: Ne pas contrôler pour un descendant de X**
+
+- Cette condition identifie les variables qui DOIVENT être exclues d'un modèle statistique
+- Contrôler pour un descendant de X ne permet pas d'identifier l'effet causal total de X sur Y
+
+![](images/goa14.png){ width=90% height=90% }
+
+## Condition 2{.smaller}
+
+**Condition 2: il FAUT fermer tous les chemins par porte arrière**
+
+- Chemin par porte arrière : chemin qui lie X à Y avec une flèche qui pointe à X
+- Il est important de FERMER le flot de cette information statistique
+- Ci-dessus, nous DEVONS contrôler Z, autrement nous incluons une autre explication possible.
+
+![](images/goa15.png){ width=90% height=90% }
+
+
+## Condition 2{.smaller}
+
+**Condition 2: il FAUT fermer tous les chemins par porte arrière**
+
+- Chemin par porte arrière : chemin qui lie X à Y avec une flèche qui pointe à X
+- Il est important de FERMER le flot de cette information statistique
+- Ci-dessus, nous DEVONS contrôler Z, autrement nous incluons une autre explication possible.
+
+![](images/goa16.png){ width=90% height=90% }
+
+
+## Les GOA et les régressions{.smaller}
+
+- Les GOA nous indiquent pour quelles variables contrôler (ou pas) dans l'analyse.
+  - Interprétation: effet de X1 sur Y **après avoir contrôlé** pour X2
+- L'analyse des GOA nous aide à développer un réflexe important...
+  - **Ne pas interpréter les contrôles!**
+  
+  
+# De la pratique
+
+## Comment déterminer si un chemin est ouvert ou fermé{.smaller}
+
+- Les chaînes et les fourchettes sont ouvertes
+- Les collisions sont fermées
+- Un chemin composé uniquement de chaînes et de fourchettes est ouvert
+- Dès qu'il y a au moins une collision, le chemin est fermé
+
+## Ouvert ou fermé? {.smaller}
+
+![](images/goa17.png){ width=90% height=90% }
+
+
+
+
+## Ouvert!{.smaller}
+
+![](images/goa18.png){ width=90% height=90% }
+
+
+
+## Ouvert ou fermé?{.smaller}
+
+![](images/goa19.png){ width=90% height=90% }
+
+
+
+## Fermé!{.smaller}
+
+![](images/goa20.png){ width=90% height=90% }
+
+
+
+## Ouvert ou fermé?{.smaller}
+
+![](images/goa21.png){ width=90% height=90% }
+
+
+
+## Ouvert!{.smaller}
+
+![](images/goa22.png){ width=90% height=90% }
+
+
+
+
+## Ouvert ou fermé?{.smaller}
+
+![](images/goa23.png){ width=90% height=90% }
+
+
+
+## Fermé!{.smaller}
+
+![](images/goa24.png){ width=90% height=90% }
+
+
+## Rappelez-vous{.smaller} 
+
+**Contrôler pour le maillon central d'une collision ouvre un chemin**
+
+![](images/goa25.png){ width=90% height=90% }
+
+
+
+## Rappelez-vous{.smaller}
+
+**Contrôler pour le maillon central d'une collision ouvre un chemin**
+
+![](images/goa26.png){ width=90% height=90% }
+
+
+
+## Contrôler ou pas?{.smaller} 
+
+**La marche à suivre pour savoir quoi contrôler**
+
+- Faire la liste des variables pour lesquelles il faut **ÉVITER** de contrôler
+  - Tous les descendants de X
+- Faire la liste de tous les chemins par porte arrière
+  - Tous les chemins qui vont de X à Y et qui ont une flèche qui pointe vers X
+- Est-ce qu'il y a des chemins par porte arrière qui sont ouverts?
+  - Dès qu'il y a une collision, le chemin est fermé
+- Est-il possible de bloquer ces chemins?
+- Donc... est-ce que l'effet causal de X sur Y est identifiable?
+
+
+## Contrôler ou pas?{.smaller} 
+
+1. Y a-t-il des descendants de X? 
+2. Y a-t-il des chemins par porte arrière?
+3. Y a-t-il des chemins par porte arrière ouverts?
+4. Est-il possible de bloquer ces chemins?
+5. L'effet causal de X sur Y est-il identifiable?
+
+![](images/goa27.png){ width=60% height=60% }
+
+
+## Contrôler ou pas?{.smaller} 
+
+1. Y a-t-il des descendants de X? **Oui, Z1, Z2, Z4 et Z5** 
+2. Y a-t-il des chemins par porte arrière? **Oui, Z3**
+3. Y a-t-il des chemins par porte arrière ouverts? **Oui, Z3**
+4. Est-il possible de bloquer ces chemins? **Oui, si on contrôle Z3**
+5. L'effet causal de X sur Y est-il identifiable? **Si on contrôle Z3!**
+
+![](images/goa28.png){width=60% height=60%}
+
+
+
+
+## Contrôler ou pas?{.smaller} 
+
+::::{.columns}
+
+:::{.column width=40%}
+
+1. Y a-t-il des descendants de X? 
+2. Y a-t-il des chemins par porte arrière?
+3. Y a-t-il des chemins par porte arrière ouverts?
+4. Est-il possible de bloquer ces chemins?
+5. L'effet causal de X sur Y est-il identifiable?
+
+:::
+
+:::{.column width=60%}
+
+![](images/goa29.png){width=100% height=100%}
+
+:::
+::::
+
+
+## Contrôler ou pas?{.smaller} 
+
+::::{.columns}
+
+:::{.column width=40%}
+
+
+1. Y a-t-il des descendants de X? **Oui, Z1, Z2, Z3** 
+2. Y a-t-il des chemins par porte arrière? **Oui, Z4**
+3. Y a-t-il des chemins par porte arrière ouverts? **Oui, Z4**
+4. Est-il possible de bloquer ces chemins? **Oui, si on contrôle Z4**
+5. L'effet causal de X sur Y est-il identifiable? **Oui, si on contrôle Z4**
+
+:::
+
+:::{.column width=60%}
+
+![](images/goa30.png){width=100% height=100%}
+
+:::
+::::
+
+## Contrôler ou pas?{.smaller} 
+
+::::{.columns}
+
+:::{.column width=40%}
+
+1. Y a-t-il des descendants de X? 
+2. Y a-t-il des chemins par porte arrière?
+3. Y a-t-il des chemins par porte arrière ouverts?
+4. Est-il possible de bloquer ces chemins?
+5. L'effet causal de X sur Y est-il identifiable?
+
+:::
+
+:::{.column width=60%}
+
+![](images/goa31.png){width=100% height=100%}
+
+:::
+::::
+
+## Contrôler ou pas?{.smaller} 
+
+::::{.columns}
+
+:::{.column width=40%}
+
+1. Y a-t-il des descendants de X? **Oui, Z1** 
+2. Y a-t-il des chemins par porte arrière? **Oui, Z3**
+3. Y a-t-il des chemins par porte arrière ouverts? **Oui, Z3**
+4. Est-il possible de bloquer ces chemins? **Oui, si on contrôle Z3**
+5. L'effet causal de X sur Y est-il identifiable? **Oui, si on contrôle Z3**
+
+
+:::
+
+:::{.column width=60%}
+
+![](images/goa31_2.png){width=100% height=100%}
+
+:::
+::::
+
+# Le problème fondamental de l'inférence causal
+
+## Exemples de questions causales{.smaller}
+
+- L'élection de la CAQ en 2018 a-t-elle contribué au succès du Bloc Québécois en 2019?
+  - Quel aurait été le résultat obtenu par le Bloc si la CAQ n'avait pas gagné en 2018?
+
+- Le référendum sur le Brexit a-t-il causé une chute dans la valeur de la livre sterling?
+  - Quelle serait la valeur actuelle de la livre sterling si le Brexit n'avait jamais existé?
+
+## Le problème fondamental de l'inférence causal{.smaller}
+
+**Autrement dit, le problème fondamental de l'inférence causal, c'est qu'on ne peut pas remonter dans le temps...**
+
+## Le raisonnement contre-factuel{.smaller}
+
+- Permet de théoriser des événements qui ne se sont pas réalisés, mais auraient pu le faire sous certaines conditions
+- Essentiellement, de répondre à la question : et si… ? 
+- Et imaginer des mondes hypothétiques
+
+
+## Le raisonnement contre-factuel{.smaller}
+
+- Le contre-factuel est similaire à une expérience aléatoire
+  - La différence entre ce qui arriverait à un individu (une unité) s'il recevait le traitement et ce qui arriverait au même individu s'il ne recevait pas le traitement
+  - ex. l'effet de l'aspirine 
+  - Expérience de pensée des mondes alternatifs... mais on ne peut pas remonter dans le temps...
+  - À la place, on va calculer l'effet de traitement moyen (différence entre groupe traitement et groupe contrôle)
+- Les GOA permettent de visualiser ces comparaisons contre-factuelles
+
+## PAR CONTRE{.smaller}
+
+- Les GOA ne remplacent pas les expériences
+- Ils ne permettent pas de contourner le problème fondamental de l'inférence causale
+- C'est plutôt un outil pour se rapprocher de l'effet causal
+
+
+# Travail de fin de session
+
+## Travail de fin de session{.smaller}
+
+**Vous devrez inclure un GOA!**
+
+- Dessiner les noeuds et les flèches selon la logique
+  - Vous pourrez ensuite lire des articles scientifiques pour compléter
+- En plus de votre X et Y, votre GOA doit inclure 3 autres variables qui pourraient être associées à la VD.
+  - Il n'est pas nécessaire que ces variables existent dans la base de données obligatoire
+  - Mais au moins une! 
+  - Votre base de données choisit devrait être votre premier réflexe
+  - Si votre GOA indique qu'aucun contrôle est nécessaire... aucun contrôle est nécessaire!
+  
+
+## Travail de fin de session{.smaller}
+
+::::{.columns}
+
+:::{.column width=30%}
+
+- Si votre résultat n'est pas significatif? 
+  - Cool! C'est AUSSI une contribution à la science
+- Petit n (échantillon) et grand N (population)
+- _constant == l'intercept
+
+:::
+
+:::{.column width=70%}
+  
+![](images/regExam3.png){ width=100% height=100% }
+
+:::
+::::
+
+## Notre vieil exemple flou!{.smaller}
+  
+![](images/goa12.png){ width=70% height=70% }
+
+
+
+## Notre vieil exemple flou!{.smaller}
+  
+![](images/goa32.png){ width=70% height=70% }
+
+
+# Prochain cours
+
+## Cours 13{.smaller}
+
+- Rencontres individuelles la semaine prochaine!!
+  - Pas de cours en classe.
+  - Prenez rendez-vous déjà avec Jérémy Gilbert (Mac), Laurence-Olivier (PC), moi (à distance).
+  - Arrivez avec votre GOA, du code, des graphiques, un début de travail!
+- Pas de lecture (prenez de l'avance).
+- Pas de Datacamp.
+
+![](images/horaire13.png){ width=90% height=90% }
+
+
+
+## Cours 14{.smaller}
+
+- Les biais
+- Lecture: Ch. 8-9-10-11. Arel-Bundock, Vincent. 2021. « Méthodes quantitatives et analyse causale ».
+- Datacamp: Introduction to Regression in R: Simple logistic regression
+- Présentation: Serpents et échelles, par Flavie Lachance
+
+![](images/horaire14.png){ width=90% height=90% }
