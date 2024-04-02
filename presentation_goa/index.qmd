@@ -614,10 +614,10 @@ coef(mod)
 
 ```{r}
 n <- 100000
-X <- rnorm(n)
-Y <- 1.7 * X + rnorm(n)
+x <- rnorm(n)
+y <- 1.7 * x + rnorm(n)
 
-mod <- lm(Y ~ X)
+mod <- lm(y ~ x)
 coef(mod)
 ```
 
@@ -626,6 +626,84 @@ coef(mod)
 :::{.column width=50%}
 
 ![](images/xy_17.png){ width=100% height=100% }
+
+:::
+
+::::
+
+## Simulations
+ 
+::::{.columns}
+
+:::{.column width=50%}
+
+``` R
+X <- rnorm(n)
+Z <- 3 * X + rnorm(n)
+Y <- 0.5 * Z + rnorm(n)
+mod <- lm(Y ~ X)
+coef(mod)
+```
+
+```{r}
+X <- rnorm(n)
+Z <- 3 * X + rnorm(n)
+Y <- 0.5 * Z + rnorm(n)
+mod <- lm(Y ~ X)
+coef(mod)
+```
+
+:::
+
+:::{.column width=50%}
+
+![](images/xzy_3_05_.png){ width=100% height=100% }
+
+:::
+
+::::
+
+## Simulations
+ 
+::::{.columns}
+
+:::{.column width=50%}
+
+``` R
+X <- rnorm(n)
+Y <- 1.7 * X + rnorm(n)
+Z <- 1.2 * X + 0.8 * Y + rnorm(n)
+mod <- lm(Y ~ X)
+coef(mod)
+```
+
+```{r}
+X <- rnorm(n)
+Y <- 1.7 * X + rnorm(n)
+Z <- 1.2 * X + 0.8 * Y + rnorm(n)
+mod <- lm(Y ~ X)
+coef(mod)
+```
+
+
+``` R
+mod <- lm(Y ~ X + Z)
+coef(mod)
+```
+
+```{r}
+X <- rnorm(n)
+Y <- 1.7 * X + rnorm(n)
+Z <- 1.2 * X + 0.8 * Y + rnorm(n)
+mod <- lm(Y ~ X + Z)
+coef(mod)
+```
+
+:::
+
+:::{.column width=50%}
+
+![](images/xyz_17_12_08.png){ width=100% height=100% }
 
 :::
 
