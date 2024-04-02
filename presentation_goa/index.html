@@ -994,12 +994,12 @@ Laurence-Olivier M. Foisy &amp; Adrien Cloutier
 <span id="cb1-6"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>       X 
-1.702603 </code></pre>
+<pre><code>      X 
+1.69947 </code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/xy_17.png" style="width:100.0%;height:100.0%"></p>
+<p><img data-src="d2_goa/xy_17.svg" class="absolute" style="top: 0px; right: -600px; width: 300%; "></p>
 </div>
 </div>
 </section>
@@ -1015,11 +1015,22 @@ Laurence-Olivier M. Foisy &amp; Adrien Cloutier
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>       X 
-1.503942 </code></pre>
+1.503354 </code></pre>
+</div>
+</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>X <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb5-2"><a href=""></a>Z <span class="ot">&lt;-</span> <span class="dv">3</span> <span class="sc">*</span> X <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb5-3"><a href=""></a>Y <span class="ot">&lt;-</span> <span class="fl">0.5</span> <span class="sc">*</span> Z <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb5-4"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X <span class="sc">+</span> Z)</span>
+<span id="cb5-5"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>          X           Z 
+-0.01063942  0.50266970 </code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/xzy_3_05_.png" style="width:100.0%;height:100.0%"></p>
+<p><img data-src="d2_goa/xzy_3_05.svg" class="absolute" style="top: 0px; right: -600px; width: 300%; "></p>
 </div>
 </div>
 </section>
@@ -1027,27 +1038,27 @@ Laurence-Olivier M. Foisy &amp; Adrien Cloutier
 <h2>Simulations</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>X <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
-<span id="cb5-2"><a href=""></a>Y <span class="ot">&lt;-</span> <span class="fl">1.7</span> <span class="sc">*</span> X <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
-<span id="cb5-3"><a href=""></a>Z <span class="ot">&lt;-</span> <span class="fl">1.2</span> <span class="sc">*</span> X <span class="sc">+</span> <span class="fl">0.8</span> <span class="sc">*</span> Y <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
-<span id="cb5-4"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X)</span>
-<span id="cb5-5"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>X <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb7-2"><a href=""></a>Y <span class="ot">&lt;-</span> <span class="fl">1.7</span> <span class="sc">*</span> X <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb7-3"><a href=""></a>Z <span class="ot">&lt;-</span> <span class="fl">1.2</span> <span class="sc">*</span> X <span class="sc">+</span> <span class="fl">0.8</span> <span class="sc">*</span> Y <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb7-4"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X)</span>
+<span id="cb7-5"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>       X 
-1.700922 </code></pre>
+1.696609 </code></pre>
 </div>
 </div>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X <span class="sc">+</span> Z)</span>
-<span id="cb7-2"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X <span class="sc">+</span> Z)</span>
+<span id="cb9-2"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>        X         Z 
-0.4502530 0.4854733 </code></pre>
+0.4621872 0.4837283 </code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/xyz_17_12_08.png" style="width:100.0%;height:100.0%"></p>
+<p><img data-src="d2_goa/xyz_17_12_08.svg" class="absolute" style="top: 0px; right: -600px; width: 300%; "></p>
 </div>
 </div>
 </section></section>
