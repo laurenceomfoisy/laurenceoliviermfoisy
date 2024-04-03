@@ -456,12 +456,12 @@ Par contre si on controle le milieu, Admetton qu’on sait que la performance de
 flowchart TD;
     subgraph Fourchettes
 
-    subgraph Ouvert2
+    subgraph Ouvert
     x1((x)) --> y1((y));
     z1((z)) --> y1;
     end
 
-    subgraph Ferme2
+    subgraph Fermé
     x6((x)) --> y6[y];
     z6((z)) --> y6;
     end
@@ -499,12 +499,12 @@ subgraph Chaînes
 flowchart TD;
     subgraph Collisions
 
-    subgraph Ouvert
+    subgraph Fermé
     x3((x)) --> y3((y));
     z3((z)) --> y3;
     end
 
-    subgraph Fermé
+    subgraph Ouvert
     x4((x)) --> y4[y];
     z4((z)) --> y4;
     end
