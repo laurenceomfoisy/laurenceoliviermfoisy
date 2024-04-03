@@ -429,13 +429,13 @@ Laurence-Olivier M. Foisy &amp; Adrien Cloutier
 <h3 id="pourquoi">Pourquoi?</h3>
 <h4 id="les-trois-fonctions-des-goa">Les trois fonctions des GOA</h4>
 <ol type="1">
-<li><p>Dessiner des GOA force le chercheur à révéler ses postulats théoriques de façon explicite et transparente</p></li>
 <li><p>Déterminer si c’est possible d’identifier l’effet causale de la VD sur la VI</p></li>
 <li><p>Identifier les variables de contrôle qui doivent être incluses dans le modèle statistique</p></li>
+<li><p>Dessiner des GOA force le chercheur à révéler ses postulats théoriques de façon explicite et transparente</p></li>
 </ol>
 <h3 id="comment">Comment?</h3>
 <ul>
-<li>Par la connaissance, la littérature, l’intuition, la passion</li>
+<li>Par la connaissance, la littérature, l’intuition</li>
 </ul>
 </section>
 <section id="produire-un-goa" class="slide level2">
@@ -453,7 +453,7 @@ Laurence-Olivier M. Foisy &amp; Adrien Cloutier
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart LR;
-    X((Éducation)) --&gt; Y&gt;Idéologie politique];
+    X((Éducation)) --&gt; Y((Idéologie politique));
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -555,7 +555,7 @@ flowchart LR;
 <p></p><figure class=""><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph LR;
-    X((Éducation)) --&gt; Z1(Revenu individuel);
+    X(Éducation) --&gt; Z1(Revenu individuel);
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -568,7 +568,7 @@ flowchart LR;
 <p></p><figure class=""><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph LR;    
-    Z1(Revenu individuel) --&gt; Y&gt;Droite politique];
+    Z1(Revenu individuel) --&gt; Y(Droite politique);
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -581,7 +581,7 @@ flowchart LR;
 <p></p><figure class=""><p></p>
 <div>
 <pre class="mermaid mermaid-js">graph LR;
-    Z2(Revenu des parents) --&gt; X((Éducation));
+    Z2(Revenu des parents) --&gt; X(Éducation);
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -614,11 +614,11 @@ flowchart LR;
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart LR;
-    X((Éducation)) --&gt; Z1(Revenu individuel);
-    X --&gt; Y;
-    Z1(Revenu individuel) --&gt; Y&gt;Idéologie politique];
-    Z2(Revenu des parents) --&gt; X;
-    Z2(Revenu des parents) --&gt; Z1(Revenu individuel);
+    X((Éducation)) --&gt; Z1((Revenu individuel));
+    X --&gt; Y((Idéologie politique));
+    Z1 --&gt; Y;
+    Z2((Revenu des parents)) --&gt; X;
+    Z2 --&gt; Z1;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -645,8 +645,8 @@ flowchart LR;
 
 graph LR;
 linkStyle default interpolate basis
-    A --&gt; B;
-    B --&gt; C;
+    A((A)) --&gt; B((B));
+    B --&gt; C((C));
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -666,8 +666,8 @@ linkStyle default interpolate basis
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart LR;
-    A --&gt; B;
-    C --&gt; B;
+    A((A)) --&gt; B((B));
+    C((C)) --&gt; B;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -683,7 +683,7 @@ flowchart LR;
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Bonp exemple:</p>
+<p>Bon exemple:</p>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -692,9 +692,9 @@ flowchart LR;
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart LR;
-    A --&gt; B;
-    B --&gt; D;
-    B --&gt; C;
+    A((A)) --&gt; B((B));
+    B --&gt; D((D));
+    B --&gt; C((C));
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -711,9 +711,9 @@ flowchart LR;
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart LR;
-    A --&gt; B;
-    B --&gt; D;
-    B --&gt; C;
+    A((A)) --&gt; B((B));
+    B --&gt; D((D));
+    B --&gt; C((C));
     C --&gt; A;
 </pre>
 </div>
@@ -725,6 +725,10 @@ flowchart LR;
 </div>
 </section>
 <section id="effet-causal-vs-information-statistique" class="slide level2 smaller">
+<h2>Effet causal vs information statistique</h2>
+<p><img data-src="images/infostat.png" style="width:90.0%;height:90.0%"></p>
+</section>
+<section id="effet-causal-vs-information-statistique-1" class="slide level2 smaller">
 <h2>Effet causal vs information statistique</h2>
 <p>La causalité circule dans un sens seulement mais l’information statistique peut circuler dans les deux sens</p>
 <div class="cell" data-reveal="true" data-layout-align="default">
@@ -745,10 +749,6 @@ flowchart LR;
 </div>
 <p>Savoir que le mercure est élevé peut donner une bonne indice que la vente de crème glacée va augmenter mais ça ne veut pas dire que le mercure cause la vente de crème glacée</p>
 </section>
-<section id="information-statistique-v.-relation-causale" class="slide level2 smaller">
-<h2>Information statistique v. relation causale</h2>
-<p><img data-src="images/infostat.png" style="width:90.0%;height:90.0%"></p>
-</section>
 <section id="trois-types-de-chemins" class="slide level2 smaller">
 <h2>Trois types de chemins</h2>
 <div class="columns">
@@ -764,8 +764,8 @@ flowchart LR;
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart LR;
-    A --&gt; B;
-    A --&gt; C;
+    A((A)) --&gt; B((B));
+    A --&gt; C((C));
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -785,8 +785,8 @@ flowchart LR;
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart LR;
-    A --&gt; B;
-    B --&gt; C;
+    A((A)) --&gt; B((B));
+    B --&gt; C((C));
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -806,8 +806,8 @@ flowchart LR;
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart LR;
-    A --&gt; B;
-    C --&gt; B;
+    A((A)) --&gt; B((B));
+    C((C)) --&gt; B;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -827,7 +827,7 @@ flowchart LR;
 <h2>Chemin ouvert ou fermé</h2>
 <ul>
 <li>Ouvert == l’information statistique circule entre A et C.</li>
-<li>Fermé == l’information ne circule <strong>PAS</strong> entre A et C.</li>
+<li>Fermé == l’information statistique ne circule <strong>PAS</strong> entre A et C.</li>
 </ul>
 <p>Contrôler pour le maillon central d’un chemin RENVERSE le flot d’information:</p>
 <ul>
@@ -850,6 +850,91 @@ flowchart LR;
 </div>
 </div>
 </div>
+</section>
+<section id="chemin-ouvert-ou-fermé-1" class="slide level2 smaller">
+<h2>Chemin ouvert ou fermé</h2>
+<p>Pour signifier qu’on contrôle pour une variable, on l’encadre</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Non contrôlé</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+
+flowchart LR;
+    X((Comportements risqués X)) --&gt; Z((Ne pas porter sa ceinture Z));
+    Z --&gt; Y((Se blesser gravement Y));
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>L’information statistique circule</p>
+</div><div class="column" style="width:50%;">
+<p>Contrôlé</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+
+flowchart LR;
+    X((Comportements risqués X)) --&gt; Z[Ne pas porter sa ceinture Z];
+    Z --&gt; Y((Se blesser gravement Y));
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>L’information statistique ne circule plus</p>
+</div>
+</div>
+</section>
+<section id="chemin-ouvert-ou-fermé-2" class="slide level2 smaller">
+<h2>Chemin ouvert ou fermé</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+
+flowchart LR;
+    X((Comportements risqués X)) --&gt; Z((Ne pas porter sa ceinture Z));
+    Z --&gt; Y((Se blesser gravement Y));
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Ici le chemin est ouvert donc l’information statistique circule entre les deux extrémité. Savoir que le comportement est rsiqué donne de l’information sur les chances de se blesser gravement et savoir que la personne est blessée gravement indique qu’il y a peut-être eu un comportement risqué.</p>
+</section>
+<section id="chemin-ouvert-ou-fermé-3" class="slide level2 smaller">
+<h2>Chemin ouvert ou fermé</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+
+flowchart LR;
+    X((Comportements risqués X)) --&gt; Z[Ne pas porter sa ceinture Z];
+    Z --&gt; Y((Se blesser gravement Y));
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Ici le chemin est fermé donc l’information statistique ne circule pas entre les deux extrémité. Si on sait que la personne portait sa ceinture et qu’elle s’est blessée gravement, ça ne nous donne pas d’information sur le comportement risqué.</p>
 </section>
 <section id="fourchette" class="slide level2 smaller">
 <h2>Fourchette</h2>
@@ -932,7 +1017,7 @@ flowchart LR;
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart TD;
-    subgraph Fourchette
+    subgraph Fourchettes
 
     subgraph Ouvert2
     x1((x)) --&gt; y1((y));
@@ -960,7 +1045,7 @@ flowchart TD;
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart TD;
-subgraph Chaines
+subgraph Chaînes
 
     subgraph Ouvert
     x2((x)) --&gt; y2((y));
@@ -988,7 +1073,7 @@ subgraph Chaines
 <pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 
 flowchart TD;
-    subgraph Collision
+    subgraph Collisions
 
     subgraph Ouvert
     x3((x)) --&gt; y3((y));
@@ -1011,8 +1096,8 @@ flowchart TD;
 </div>
 <p>Un chemin peut être composé d’une infinité de combinaison de fourchettes, chaines, et collisions. Le chemin est ouvert si tout est ouvert et fermé si un des lien est fermé.</p>
 </section>
-<section id="identification-causale" class="slide level2 smaller">
-<h2>Identification causale</h2>
+<section id="les-contrôles" class="slide level2 smaller">
+<h2>Les contrôles</h2>
 <h3 id="les-deux-conditions">Les deux conditions</h3>
 <ol type="1">
 <li>Ne pas contrôler pour un descendant de X</li>
@@ -1029,7 +1114,7 @@ flowchart TD;
 </section>
 <section id="ne-pas-contrôler-les-descendants-de-x" class="slide level2">
 <h2>Ne pas contrôler les descendants de X</h2>
-<p>Disons que le genre influence le salaire et l’occupation et que l’occupation influence le salaire. Si on controle pour l’occupation, on vien juste observer l’effet du genre sur le salaire mais on obstrue l’effet du genre sur l’occupation sur le salaire. On coupe une part importante de l’effet du genre sur le salaire.</p>
+<p>Disons que le genre influence le salaire et l’occupation et que l’occupation influence le salaire. Si on controle pour l’occupation, on vient juste observer l’effet du genre sur le salaire mais on obstrue l’effet du genre sur l’occupation sur le salaire. On coupe une part importante de l’effet du genre sur le salaire.</p>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -1138,11 +1223,6 @@ flowchart LR;
 </div>
 </div>
 </section>
-<section id="avant-toute-chose" class="slide level2 smaller">
-<h2>Avant toute chose</h2>
-<p><strong>Pour signifier qu’on contrôle pour une variable, on l’encadre</strong></p>
-<p><img data-src="images/goa9.png" style="width:70.0%;height:70.0%"></p>
-</section>
 <section>
 <section id="de-la-pratique" class="title-slide slide level1 center">
 <h1>De la pratique</h1>
@@ -1202,7 +1282,7 @@ flowchart LR;
 <section id="contrôler-ou-pas" class="slide level2 smaller">
 <h2>Contrôler ou pas?</h2>
 <p><strong>La marche à suivre pour savoir quoi contrôler</strong></p>
-<ul>
+<ol type="1">
 <li>Faire la liste des variables pour lesquelles il faut <strong>ÉVITER</strong> de contrôler
 <ul>
 <li>Tous les descendants de X</li>
@@ -1217,7 +1297,7 @@ flowchart LR;
 </ul></li>
 <li>Est-il possible de bloquer ces chemins?</li>
 <li>Donc… est-ce que l’effet causal de X sur Y est identifiable?</li>
-</ul>
+</ol>
 </section>
 <section id="contrôler-ou-pas-1" class="slide level2 smaller">
 <h2>Contrôler ou pas?</h2>
@@ -1305,57 +1385,40 @@ flowchart LR;
 </div>
 </div>
 </section></section>
-<section>
-<section id="le-problème-fondamental-de-linférence-causal" class="title-slide slide level1 center">
-<h1>Le problème fondamental de l’inférence causal</h1>
+<section id="en-résumé" class="title-slide slide level1 smaller center">
+<h1>En résumé</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Dessiner un GOA:
+<ol type="1">
+<li>Faire la liste des variables pertinentes pour la question de recherche</li>
+<li>Représenter graphiquement les relations causales entre ces variables</li>
+</ol></li>
+<li>Contraintes:
+<ol type="1">
+<li>Orienté</li>
+<li>Acyclique</li>
+</ol></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Types de chemins
+<ol type="1">
+<li>Fourchette - ouvert</li>
+<li>Chaîne - ouvert</li>
+<li>Collision - fermé</li>
+</ol></li>
+<li>Contrôles:
+<ol type="1">
+<li>Ne pas contrôler pour un descendant de X</li>
+<li>Fermer tous les chemins par porte arrière</li>
+</ol></li>
+</ul>
+</div>
+</div>
+</section>
 
-</section>
-<section id="exemples-de-questions-causales" class="slide level2 smaller">
-<h2>Exemples de questions causales</h2>
-<ul>
-<li>L’élection de la CAQ en 2018 a-t-elle contribué au succès du Bloc Québécois en 2019?
-<ul>
-<li>Quel aurait été le résultat obtenu par le Bloc si la CAQ n’avait pas gagné en 2018?</li>
-</ul></li>
-<li>Le référendum sur le Brexit a-t-il causé une chute dans la valeur de la livre sterling?
-<ul>
-<li>Quelle serait la valeur actuelle de la livre sterling si le Brexit n’avait jamais existé?</li>
-</ul></li>
-</ul>
-</section>
-<section id="le-problème-fondamental-de-linférence-causal-1" class="slide level2 smaller">
-<h2>Le problème fondamental de l’inférence causal</h2>
-<p><strong>Autrement dit, le problème fondamental de l’inférence causal, c’est qu’on ne peut pas remonter dans le temps…</strong></p>
-</section>
-<section id="le-raisonnement-contre-factuel" class="slide level2 smaller">
-<h2>Le raisonnement contre-factuel</h2>
-<ul>
-<li>Permet de théoriser des événements qui ne se sont pas réalisés, mais auraient pu le faire sous certaines conditions</li>
-<li>Essentiellement, de répondre à la question : et si… ?</li>
-<li>Et imaginer des mondes hypothétiques</li>
-</ul>
-</section>
-<section id="le-raisonnement-contre-factuel-1" class="slide level2 smaller">
-<h2>Le raisonnement contre-factuel</h2>
-<ul>
-<li>Le contre-factuel est similaire à une expérience aléatoire
-<ul>
-<li>La différence entre ce qui arriverait à un individu (une unité) s’il recevait le traitement et ce qui arriverait au même individu s’il ne recevait pas le traitement</li>
-<li>ex. l’effet de l’aspirine</li>
-<li>Expérience de pensée des mondes alternatifs… mais on ne peut pas remonter dans le temps…</li>
-<li>À la place, on va calculer l’effet de traitement moyen (différence entre groupe traitement et groupe contrôle)</li>
-</ul></li>
-<li>Les GOA permettent de visualiser ces comparaisons contre-factuelles</li>
-</ul>
-</section>
-<section id="par-contre" class="slide level2 smaller">
-<h2>PAR CONTRE</h2>
-<ul>
-<li>Les GOA ne remplacent pas les expériences</li>
-<li>Ils ne permettent pas de contourner le problème fondamental de l’inférence causale</li>
-<li>C’est plutôt un outil pour se rapprocher de l’effet causal</li>
-</ul>
-</section></section>
 <section>
 <section id="travail-de-fin-de-session" class="title-slide slide level1 center">
 <h1>Travail de fin de session</h1>
@@ -1408,7 +1471,7 @@ flowchart LR;
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>       X 
-1.701485 </code></pre>
+1.697916 </code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -1416,8 +1479,8 @@ flowchart LR;
 </div>
 </div>
 </section>
-<section id="simulations-1" class="slide level2">
-<h2>Simulations</h2>
+<section id="simulation-chaîne" class="slide level2">
+<h2>Simulation Chaîne</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a>X <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
@@ -1428,7 +1491,7 @@ flowchart LR;
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>       X 
-1.502026 </code></pre>
+1.493924 </code></pre>
 </div>
 </div>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>X <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
@@ -1438,8 +1501,8 @@ flowchart LR;
 <span id="cb5-5"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>           X            Z 
--0.002649123  0.499494412 </code></pre>
+<pre><code>         X          Z 
+0.01817093 0.49504134 </code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -1447,10 +1510,25 @@ flowchart LR;
 </div>
 </div>
 </section>
-<section id="simulations-2" class="slide level2">
-<h2>Simulations</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="simulation-collision" class="slide level2">
+<h2>Simulation Collision</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+
+flowchart LR;
+    X((X)) -- 1.7 --&gt; Y((Y));
+    Y -- 0.8 --&gt; Z((Z));
+    X -- 1.2 --&gt; Z;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>X <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
 <span id="cb7-2"><a href=""></a>Y <span class="ot">&lt;-</span> <span class="fl">1.7</span> <span class="sc">*</span> X <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
 <span id="cb7-3"><a href=""></a>Z <span class="ot">&lt;-</span> <span class="fl">1.2</span> <span class="sc">*</span> X <span class="sc">+</span> <span class="fl">0.8</span> <span class="sc">*</span> Y <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
@@ -1459,19 +1537,160 @@ flowchart LR;
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>       X 
-1.700663 </code></pre>
+1.696465 </code></pre>
 </div>
 </div>
 <div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X <span class="sc">+</span> Z)</span>
 <span id="cb9-2"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>        X         Z 
-0.4499981 0.4873787 </code></pre>
+<pre><code>       X        Z 
+0.446385 0.488798 </code></pre>
 </div>
 </div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="d2_goa/xyz_17_12_08.svg" class="absolute" style="top: 0px; right: -600px; width: 300%; "></p>
+</section>
+<section id="simulation-fourchette" class="slide level2">
+<h2>Simulation Fourchette</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+
+flowchart LR;
+    X((X)) -- 2 --&gt; Z1((Z1));
+    Z1 -- 0.25 --&gt; Y((Y));
+    Z2((Z2)) -- 1 --&gt; Y;
+    Z2 -- 1 --&gt; X;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href=""></a>Z2 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb11-2"><a href=""></a>X <span class="ot">&lt;-</span> Z2 <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb11-3"><a href=""></a>Z1 <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> X <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb11-4"><a href=""></a>Y <span class="ot">&lt;-</span> <span class="fl">0.25</span> <span class="sc">*</span> Z1 <span class="sc">+</span> Z2 <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb11-5"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X <span class="sc">+</span> Z2)</span>
+<span id="cb11-6"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>        X        Z2 
+0.5017716 0.9962761 </code></pre>
+</div>
+</div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X)</span>
+<span id="cb13-2"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>        X 
+0.4560835 </code></pre>
+</div>
+</div>
+</section>
+<section id="simulation-complexe" class="slide level2 smaller">
+<h2>Simulation complexe</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+
+flowchart LR;
+    X((X)) -- 2 --&gt; Z2((Z2));
+    Z2 -- 0.5 --&gt; Y((Y));
+    Z2 -- 1 --&gt; Z3((Z3));
+    Y -- 1 --&gt; Z3;
+    Z1((Z1)) -- 1 --&gt; Y;
+    Z1((Z1)) -- 1 --&gt; X;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ol type="1">
+<li>Y a-t-il des descendants de X?</li>
+<li>Y a-t-il des chemins par porte arrière?</li>
+<li>Y a-t-il des chemins par porte arrière ouverts?</li>
+<li>Est-il possible de bloquer ces chemins?</li>
+<li>L’effet causal de X sur Y est-il identifiable?</li>
+</ol>
+</section>
+<section id="simulation-complexe-1" class="slide level2 smaller">
+<h2>Simulation complexe</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+
+flowchart LR;
+    X((X)) -- 2 --&gt; Z2((Z2));
+    Z2 -- 0.5 --&gt; Y((Y));
+    Z2 -- 1 --&gt; Z3((Z3));
+    Y -- 1 --&gt; Z3;
+    Z1((Z1)) -- 1 --&gt; Y;
+    Z1((Z1)) -- 1 --&gt; X;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ol type="1">
+<li>Y a-t-il des descendants de X? <strong>Oui, Z2 et Z3</strong></li>
+<li>Y a-t-il des chemins par porte arrière? <strong>Oui, Z1</strong></li>
+<li>Y a-t-il des chemins par porte arrière ouverts? <strong>Oui, Z1</strong></li>
+<li>Est-il possible de bloquer ces chemins? <strong>Oui, si on contrôle Z1</strong></li>
+<li>L’effet causal de X sur Y est-il identifiable? <strong>Oui, si on contrôle Z1</strong></li>
+</ol>
+</section>
+<section id="simulation-complexe---preuve" class="slide level2 smaller">
+<h2>Simulation complexe - PREUVE</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+
+flowchart LR;
+    X((X)) -- 2 --&gt; Z2((Z2));
+    Z2 -- 0.5 --&gt; Y((Y));
+    Z2 -- 1 --&gt; Z3((Z3));
+    Y -- 1 --&gt; Z3;
+    Z1((Z1)) -- 1 --&gt; Y;
+    Z1((Z1)) -- 1 --&gt; X;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href=""></a>Z1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb15-2"><a href=""></a>X <span class="ot">&lt;-</span> Z1 <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb15-3"><a href=""></a>Z2 <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> X <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb15-4"><a href=""></a>Y <span class="ot">&lt;-</span> <span class="fl">0.5</span> <span class="sc">*</span> Z2 <span class="sc">+</span> Z1 <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb15-5"><a href=""></a>Z3 <span class="ot">&lt;-</span> Z2 <span class="sc">+</span> Y <span class="sc">+</span> <span class="fu">rnorm</span>(n)</span>
+<span id="cb15-6"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X <span class="sc">+</span> Z1)</span>
+<span id="cb15-7"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>        X        Z1 
+1.0030458 0.9947334 </code></pre>
+</div>
+</div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X)</span>
+<span id="cb17-2"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>       X 
+1.502261 </code></pre>
 </div>
 </div>
 </section></section>
@@ -1480,29 +1699,31 @@ flowchart LR;
 <h1>Prochain cours</h1>
 
 </section>
-<section id="cours-13" class="slide level2 smaller">
-<h2>Cours 13</h2>
-<ul>
+<section id="messages" class="slide level2 smaller">
+<h2>Messages</h2>
+<ol type="1">
 <li>Rencontres individuelles la semaine prochaine!!
 <ul>
 <li>Pas de cours en classe.</li>
-<li>Prenez rendez-vous déjà avec Jérémy Gilbert (Mac), Laurence-Olivier (PC), moi (à distance).</li>
+<li>Prenez rendez-vous déjà avec Camille Pelletier (Mac), Alexandre Bouillon (PC), Adrien Cloutier.</li>
 <li>Arrivez avec votre GOA, du code, des graphiques, un début de travail!</li>
 </ul></li>
-<li>Pas de lecture (prenez de l’avance).</li>
-<li>Pas de Datacamp.</li>
-</ul>
+<li>Dans 2 semaines: Exam 3 (18 avril). Ce sera exactement le même format que l’exam 2 (papier crayon). Ils ont 1h encore. Ça peut couvrir la matière du cours 1 jusqu’à ton cours 12 sur les GOA (inclusivement). Pour étudier:
+<ul>
+<li>Faire les Datacamp</li>
+<li>Faire les lectures</li>
+<li>Relire les diapos</li>
+<li>Être capable de rouler le code qu’on a fait en classe et en comprendre la logique.</li>
+</ul></li>
+</ol>
 <p><img data-src="images/horaire13.png" style="width:90.0%;height:90.0%"></p>
 </section>
-<section id="cours-14" class="slide level2 smaller">
-<h2>Cours 14</h2>
-<ul>
-<li>Les biais</li>
-<li>Lecture: Ch. 8-9-10-11. Arel-Bundock, Vincent. 2021. « Méthodes quantitatives et analyse causale ».</li>
-<li>Datacamp: Introduction to Regression in R: Simple logistic regression</li>
-<li>Présentation: Serpents et échelles, par Flavie Lachance</li>
-</ul>
-<p><img data-src="images/horaire14.png" style="width:90.0%;height:90.0%"></p>
+<section id="messages-1" class="slide level2 smaller">
+<h2>Messages</h2>
+<ol start="3" type="1">
+<li>Dans 3 semaines: Travail final + Datacamp complété pour le vendredi 26 avril 23h59.</li>
+<li>Prennez de l’avance dans le travail final. Coder peut être long.</li>
+</ol>
 <div class="quarto-auto-generated-content">
 <p><img src="images/ul_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
