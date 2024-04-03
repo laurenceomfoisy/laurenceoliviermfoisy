@@ -14,7 +14,7 @@ format:
 
 ## Aujourd'hui{.smaller}
 
-### Cours 12
+### Cours 11
 
 - Présentation: Introduction à la causalité: Le problème fondamental de l'inférence causale
 - Les graphes orientés acycliques (GOA)
@@ -1139,9 +1139,10 @@ c(coefs["X"])
     - Relire les diapos
     - Être capable de rouler le code qu'on a fait en classe et en comprendre la logique.
 
-![](images/horaire13.png){ width=90% height=90% }
 
 ## Messages{.smaller}
 
 3. Dans 3 semaines: Travail final + Datacamp complété pour le vendredi 26 avril 23h59.
 4. Prennez de l'avance dans le travail final. Coder peut être long.
+
+![](images/horaire13.png){ width=90% height=90% }
