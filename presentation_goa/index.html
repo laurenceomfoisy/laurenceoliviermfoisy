@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.8">
+  <meta name="generator" content="quarto-1.4.552">
 
   <meta name="author" content="Laurence-Olivier M. Foisy &amp; Adrien Cloutier">
   <title>Les graphes orientés acycliques (GOA)</title>
@@ -1020,8 +1020,8 @@ flowchart TD;
     subgraph Fourchettes
 
     subgraph Ouvert
-    x1((x)) --&gt; y1((y));
-    z1((z)) --&gt; y1;
+    y1((y)) --&gt; x1((x));
+    y1((y)) --&gt; z1((z));
     end
 
     subgraph Fermé
@@ -1470,8 +1470,8 @@ flowchart LR;
 <span id="cb1-6"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>      X 
-1.69687 </code></pre>
+<pre><code>       X 
+1.694828 </code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -1490,8 +1490,8 @@ flowchart LR;
 <span id="cb3-5"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>      X 
-1.50025 </code></pre>
+<pre><code>       X 
+1.500098 </code></pre>
 </div>
 </div>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>X <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n)</span>
@@ -1501,8 +1501,8 @@ flowchart LR;
 <span id="cb5-5"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>           X            Z 
-0.0001123406 0.5008425055 </code></pre>
+<pre><code>          X           Z 
+-0.01316813  0.50273984 </code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -1537,7 +1537,7 @@ flowchart LR;
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>       X 
-1.700764 </code></pre>
+1.692331 </code></pre>
 </div>
 </div>
 <div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X <span class="sc">+</span> Z)</span>
@@ -1545,7 +1545,7 @@ flowchart LR;
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>        X         Z 
-0.4455204 0.4897908 </code></pre>
+0.4532641 0.4868342 </code></pre>
 </div>
 </div>
 </section>
@@ -1577,8 +1577,8 @@ flowchart LR;
 <span id="cb11-6"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>       X       Z2 
-0.496865 1.004659 </code></pre>
+<pre><code>        X        Z2 
+0.4997197 0.9927905 </code></pre>
 </div>
 </div>
 <div class="sourceCode" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X)</span>
@@ -1586,7 +1586,7 @@ flowchart LR;
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>        X 
-0.4520724 </code></pre>
+0.4540567 </code></pre>
 </div>
 </div>
 </section>
@@ -1681,8 +1681,8 @@ flowchart LR;
 <span id="cb15-7"><a href=""></a><span class="fu">coef</span>(mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>       X       Z1 
-1.004946 0.988438 </code></pre>
+<pre><code>        X        Z1 
+0.9988066 1.0032431 </code></pre>
 </div>
 </div>
 <div class="sourceCode" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X)</span>
@@ -1690,7 +1690,7 @@ flowchart LR;
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>       X 
-1.500379 </code></pre>
+1.501001 </code></pre>
 </div>
 </div>
 </section></section>
@@ -2055,6 +2055,24 @@ flowchart LR;
         // clear code selection
         e.clearSelection();
       });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -2091,7 +2109,11 @@ flowchart LR;
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

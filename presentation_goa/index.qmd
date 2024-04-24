@@ -457,8 +457,8 @@ flowchart TD;
     subgraph Fourchettes
 
     subgraph Ouvert
-    x1((x)) --> y1((y));
-    z1((z)) --> y1;
+    y1((y)) --> x1((x));
+    y1((y)) --> z1((z));
     end
 
     subgraph Fermé
