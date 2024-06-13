@@ -176,3 +176,7 @@ prompt <- clellm::ollama_prompt("prompt", model = "model_name")
 |Law and Crime                                     |1      |1    |1       |1     |NA   |
 |Rights, Liberties, Minorities, and Discrimination |0.86   |0.86 |0.71    |0.57  |0.29 |
 |<span style="background-color: #FFFFFF; font-weight: bold; color: black">Weighted Mean</span>                                     |<span style="background-color: #C0C0C0; font-weight: bold; color: black">0.81</span>   |<span style="background-color: #CD7F32; font-weight: bold; color: black">0.77</span> |0.5     |<span style="background-color: #FFD700; font-weight: bold; color: black">0.86</span>  |0.19 |
+
+## Discussion, Conclusion, and Future Research
+
+ 
