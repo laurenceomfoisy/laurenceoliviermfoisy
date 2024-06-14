@@ -89,14 +89,46 @@ format:
 
 ::::
 
+## Method{.smaller}
 
-## Ollama
+::::{.columns}
 
-- Open-source
-- Large Language Models
-- Easy to use API
+:::{.column width=33%}
+- CES 2021 Survey
+  - Question: "What is the most important issue to you personally in this federal election?"
 
-![](images/ollama.png){.absolute top=200 right=0 width=40%}
+- Human Coder as ground truth
+
+- Models
+  - Llama3
+  - Phi3
+  - Mistral
+  - GPT-4
+  - Dictionary
+
+:::
+
+:::{.column width=33%}
+  - Law and Crime
+  - Culture and Nationalism
+  - Public Lands and Agriculture
+  - Governments and Governance
+  - Immigration
+  - Rights, Liberties, Minorities, and Discrimination
+
+:::
+
+:::{.column width=33%}
+
+  - Health and Social Services
+  - Economy and Employment
+  - Education
+  - Environment and Energy
+  - International Affairs and Defense
+  - Technology
+:::
+
+::::
 
 ## Manual Coding
 
@@ -105,6 +137,14 @@ format:
 ![](images/issue_distribution.png){width="75%"}
 
 </center>
+
+## Ollama
+
+- Open-source
+- Large Language Models
+- Easy to use API
+
+![](images/ollama.png){.absolute top=200 right=0 width=40%}
 
 ## CLELLM{auto-animate="true"}
 
