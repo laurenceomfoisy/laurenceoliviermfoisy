@@ -13,6 +13,13 @@ format:
     transition-speed: fast
 ---
 
+## À voir aujourd'hui
+
+- Terminal
+- Git
+- GitHub
+- GitHub pages
+
 ## Avant de commencer, un peu de terminal{.smaller}
 
 - Ce que vous entrez dans le terminal n'est pas du code, mais des commandes avec des instructions
@@ -93,7 +100,6 @@ format:
 
 ## Important
 
-
 - Télécharger et installer Git depuis [git-scm.com](git-scm.com)
 
 - Configurer git avant de commencer à l'utiliser
@@ -107,56 +113,18 @@ git config --global credential.helper store
 ```
 <!--`-->
 
-## Git{.smaller}
+## Git{.smaller transition="none"}
 
 ![](img/git.png)
 
-## Organiser votre répertoire et placer vos données{.smaller}
-
-```bash
-/MonProjet
-├── data/                
-│   ├── raw_data.csv      
-│   └── cleaned_data.csv  
-├── scripts/             
-│   ├── analyse.R         
-│   └── visualization.R   
-├── results/             
-│   ├── summary_statistics.csv  
-│   └── plots/                  
-│       └── data_distribution.png  
-├── docs/                
-│   ├── methodology.md    
-│   ├── references.bib    
-│   └── project_presentation.qmd  
-└── README.md            
-```
-<!--`-->
-
-## .gitignore{.smaller}
-
-- Fichier texte qui spécifie les fichiers et dossiers à ignorer
-- Les fichiers et dossiers spécifiés dans le .gitignore ne seront pas suivis par Git
-- Exemple de contenu d'un .gitignore
-  - `*.csv` - Ignore tous les fichiers .csv
-  - `data/` - Ignore le dossier data
-  - `.Rproj` - Ignore tous les fichiers .Rproj
-  - `.Renviron` - Ignore le fichier .Renviron
-
-## Git{.smaller}
-
-![](img/git.png)
-
-## GitHub{.smaller}
+## GitHub{.smaller transition="none"}
 
 ![](img/git_github.png)
 
 
 ## GitHub
 
-- Git sans internet n'est pas très utile
-
-- Git + Internet = GitHub
+- GitHub = Git + Internet
 
 - Plateforme de développement collaboratif
 - Héberge des projets Git
@@ -217,6 +185,38 @@ git commit -m "Message de commit"
 git push
 ```
 <!--`-->
+
+## Organiser votre répertoire et placer vos données{.smaller}
+
+```bash
+/MonProjet
+├── data/                
+│   ├── raw_data.csv      
+│   └── cleaned_data.csv  
+├── scripts/             
+│   ├── analyse.R         
+│   └── visualization.R   
+├── results/             
+│   ├── summary_statistics.csv  
+│   └── plots/                  
+│       └── data_distribution.png  
+├── docs/                
+│   ├── methodology.md    
+│   ├── references.bib    
+│   └── project_presentation.qmd  
+└── README.md            
+```
+<!--`-->
+
+## .gitignore{.smaller}
+
+- Fichier texte qui spécifie les fichiers et dossiers à ignorer
+- Les fichiers et dossiers spécifiés dans le .gitignore ne seront pas suivis par Git
+- Exemple de contenu d'un .gitignore
+  - `*.csv` - Ignore tous les fichiers .csv
+  - `data/` - Ignore le dossier data
+  - `.Rproj` - Ignore tous les fichiers .Rproj
+  - `.Renviron` - Ignore le fichier .Renviron
 
 ## Les README.md{.smaller}
 
