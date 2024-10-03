@@ -1,0 +1,139 @@
+---
+title: Git et GitHub 
+author: Laurence-Olivier M. Foisy<br>Adrien Cloutier
+institute: Université Laval
+format:
+  revealjs:
+    mermaid: 
+      theme: dark
+    theme: night
+    logo: img/logo.png
+    footer: "Git et GitHub"
+    transition: slide
+    transition-speed: fast
+---
+
+## Avant de commencer?
+
+- Ce que vous entrez dans le terminal n'est pas du code, mais des commandes avec des instructions
+- Les commandes sont des applications qui sont déjà installées sur votre ordinateur
+- Chaque commande est un fichier exécutable. `ls` est un fichier dans dans `/bin/ls`
+- Le terminal est l'équivalent d'un explorateur de fichiers, mais en mode texte
+- À tout moment vous êtes dans une location précise, dans un répertoire ou un dossier
+
+## Liste de commandes utiles{.center .smaller}
+
+- `ls` - Liste les fichiers et dossiers dans le répertoire courant
+- `cd` - Change de répertoire
+- `mkdir` - Crée un nouveau dossier
+- `rm` - Supprime un fichier
+- `cp` - Copie un fichier
+- `mv` - Déplace ou renomme un fichier 
+- `cat` - Affiche le contenu d'un fichier
+- `git` - Gestionnaire de version
+
+<!--NOTE: A tout moment vous êtes dans un répertoire précis. Important de savoir où vous êtes. Vous aide avec votre code, sauvegarder des documents. Charger des docs. etc. -->
+
+## Pourquoi utiliser le terminal?
+
+- Parce que c'est le fun!
+
+## Git{.smaller}
+
+::::{.columns}
+
+:::{.column width=50%}
+
+- Créé par Linus Torvalds en 2005
+- Gestion de version
+- Permet de suivre l'évolution d'un projet
+- Utile pour tout ce qui est texte
+- Enregistre tous les changements faits depuis la création du projet (.git)
+- Reproductibilité et transparence
+
+:::
+
+:::{.column width=50%}
+
+![](img/meme_versions.jpg)
+
+:::
+
+::::
+
+## Important
+Configurer git avant de commencer à l'utiliser
+
+```bash
+git config --global user.name "username"
+git config --global user.email votre@email.com
+git config --global credential.helper store
+```
+<!--`-->
+
+## Git{.smaller}
+
+![](img/git.png)
+
+## GitHub{.smaller}
+
+![](img/git_github.png)
+
+
+## GitHub
+
+Git sans internet n'est pas très utile
+
+Git + Internet = GitHub
+
+- Plateforme de développement collaboratif
+- Héberge des projets Git
+- Appartient à Microsoft
+- Lieu d'entreposage de plusieurs projets open source
+
+## Projets open source sur GitHub
+
+::::{.columns}
+
+:::{.column}
+- [Linux](https://github.com/torvalds/linux)
+- [Bitcoin](https://github.com/bitcoin/bitcoin)
+- [Model Summary](https://github.com/vincentarelbundock/modelsummary)
+- [RStudio](https://github.com/rstudio)
+- [Zotero](https://github.com/zotero/zotero)
+:::
+:::{.column}
+- [Overleaf](https://github.com/overleaf/overleaf)
+- [ggplot2](https://github.com/tidyverse/ggplot2)
+- [Advanced-R](https://github.com/hadley/adv-r)
+- [Python](https://github.com/python)
+
+:::
+::::
+
+## Créer un compte et ajouter vos accès
+
+
+## Où mettre les données?
+
+## Comment l'utiliser?
+
+```bash
+git clone https://lien/vers/repo.git
+git pull #git pull est en fait deux commandes: git fetch et git merge
+git add votre_fichier
+git commit -m "Message"
+git push
+```
+<!--`-->
+
+## Branches{.smaller}
+
+- Dans notre contexte, une branche est un chapitre, une section, un élément de votre projet
+
+![](img/branch.webp)
+
+
+## GitHub pages
+
+## Conclusion
