@@ -405,14 +405,24 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 </div>
 
 </section>
-<section id="avant-de-commencer" class="slide level2">
-<h2>Avant de commencer?</h2>
+<section id="avant-de-commencer-un-peu-de-terminal" class="slide level2">
+<h2>Avant de commencer, un peu de terminal</h2>
 <ul>
 <li>Ce que vous entrez dans le terminal n’est pas du code, mais des commandes avec des instructions</li>
 <li>Les commandes sont des applications qui sont déjà installées sur votre ordinateur</li>
 <li>Chaque commande est un fichier exécutable. <code>ls</code> est un fichier dans dans <code>/bin/ls</code></li>
 <li>Le terminal est l’équivalent d’un explorateur de fichiers, mais en mode texte</li>
 <li>À tout moment vous êtes dans une location précise, dans un répertoire ou un dossier</li>
+</ul>
+</section>
+<section id="pourquoi-utiliser-le-terminal" class="slide level2">
+<h2>Pourquoi utiliser le terminal?</h2>
+<ul>
+<li><p>Compréhension accru de l’ordinateur et de votre arborescence</p></li>
+<li><p>Plusieurs outils ne sont disponibles que dans le terminal</p></li>
+<li><p>Se familiariser avec la console de R</p></li>
+<li><p>Git est concentré sur le terminal</p></li>
+<li><p>Meilleure raison: Parce que c’est le fun!</p></li>
 </ul>
 </section>
 <section id="liste-de-commandes-utiles" class="slide level2 center smaller">
@@ -427,13 +437,6 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 <li><code>cat</code> - Affiche le contenu d’un fichier</li>
 <li><code>git</code> - Gestionnaire de version</li>
 </ul>
-<!--NOTE: A tout moment vous êtes dans un répertoire précis. Important de savoir où vous êtes. Vous aide avec votre code, sauvegarder des documents. Charger des docs. etc. -->
-</section>
-<section id="pourquoi-utiliser-le-terminal" class="slide level2">
-<h2>Pourquoi utiliser le terminal?</h2>
-<ul>
-<li>Parce que c’est le fun!</li>
-</ul>
 </section>
 <section id="git" class="slide level2 smaller">
 <h2>Git</h2>
@@ -443,7 +446,7 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 <li>Créé par Linus Torvalds en 2005</li>
 <li>Gestion de version</li>
 <li>Permet de suivre l’évolution d’un projet</li>
-<li>Utile pour tout ce qui est texte</li>
+<li>Utile pour tout ce qui est texte, incluant les articles et les présentations</li>
 <li>Enregistre tous les changements faits depuis la création du projet (.git)</li>
 <li>Reproductibilité et transparence</li>
 </ul>
@@ -474,7 +477,7 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 <ul>
 <li>Plateforme de développement collaboratif</li>
 <li>Héberge des projets Git</li>
-<li>Appartient à Microsoft</li>
+<li>Acheté par Microsoft pour 7.5 milliards de dollars</li>
 <li>Lieu d’entreposage de plusieurs projets open source</li>
 </ul>
 </section>
@@ -498,20 +501,78 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 </ul>
 </div></div>
 </section>
-<section id="créer-un-compte-et-ajouter-vos-accès" class="slide level2">
-<h2>Créer un compte et ajouter vos accès</h2>
+<section id="créer-un-compte-et-ajouter-vos-accès-avec-un-token" class="slide level2 smaller">
+<h2>Créer un compte et ajouter vos accès avec un token</h2>
+<ul>
+<li>Créer un compte GitHub :</li>
+<li>Générer un token d’accès classique :
+<ul>
+<li>Connectez-vous à GitHub et allez dans vos Paramètres.</li>
+<li>Dans la section Developer Settings, cliquez sur Personal Access Tokens, puis sur Tokens (classic).</li>
+<li>Créez un nouveau token en cliquant sur Generate new token (classic).</li>
+<li>Choisissez la durée illimité et donnez tous les accès<br>
+</li>
+<li>Copiez le token généré, car vous ne pourrez plus le visualiser après avoir quitté cette page.</li>
+</ul></li>
+<li>Quand Git demandera un identifiant et un mot de passe, entrez :
+<ul>
+<li>Identifiant : votre nom d’utilisateur GitHub.</li>
+<li>Mot de passe : collez le token que vous avez généré.</li>
+</ul></li>
+</ul>
 </section>
-<section id="où-mettre-les-données" class="slide level2">
-<h2>Où mettre les données?</h2>
-</section>
-<section id="comment-lutiliser" class="slide level2">
+<section id="comment-lutiliser" class="slide level2 smaller">
 <h2>Comment l’utiliser?</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href=""></a><span class="fu">git</span> clone https://lien/vers/repo.git</span>
-<span id="cb2-2"><a href=""></a><span class="fu">git</span> pull <span class="co">#git pull est en fait deux commandes: git fetch et git merge</span></span>
-<span id="cb2-3"><a href=""></a><span class="fu">git</span> add votre_fichier</span>
-<span id="cb2-4"><a href=""></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Message"</span></span>
-<span id="cb2-5"><a href=""></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="1">
+<li>Cloner un projet existant sur votre ordinateur.</li>
+</ol>
+<ul>
+<li>Ce projet est maintenant un dossier sur votre ordinateur. Vous pouvez le modifier, le supprimer, le déplacer, etc.</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href=""></a><span class="fu">git</span> clone https://lien/vers/repo.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <!--`-->
+<ol start="2" type="1">
+<li>Modifier le projet, ajouter des fichiers, etc.</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href=""></a><span class="fu">git</span> pull </span>
+<span id="cb3-2"><a href=""></a><span class="fu">git</span> add votre_fichier_1 votre_fichier_2</span>
+<span id="cb3-3"><a href=""></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Message de commit"</span></span>
+<span id="cb3-4"><a href=""></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!--`-->
+</section>
+<section id="organiser-votre-répertoire-et-placer-vos-données" class="slide level2 smaller">
+<h2>Organiser votre répertoire et placer vos données</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href=""></a><span class="ex">/MonProjet</span></span>
+<span id="cb4-2"><a href=""></a><span class="ex">├──</span> data/                </span>
+<span id="cb4-3"><a href=""></a><span class="ex">│</span>   ├── raw_data.csv      </span>
+<span id="cb4-4"><a href=""></a><span class="ex">│</span>   └── cleaned_data.csv  </span>
+<span id="cb4-5"><a href=""></a><span class="ex">├──</span> scripts/             </span>
+<span id="cb4-6"><a href=""></a><span class="ex">│</span>   ├── analyse.R         </span>
+<span id="cb4-7"><a href=""></a><span class="ex">│</span>   └── visualization.R   </span>
+<span id="cb4-8"><a href=""></a><span class="ex">├──</span> results/             </span>
+<span id="cb4-9"><a href=""></a><span class="ex">│</span>   ├── summary_statistics.csv  </span>
+<span id="cb4-10"><a href=""></a><span class="ex">│</span>   └── plots/                  </span>
+<span id="cb4-11"><a href=""></a><span class="ex">│</span>       └── data_distribution.png  </span>
+<span id="cb4-12"><a href=""></a><span class="ex">├──</span> docs/                </span>
+<span id="cb4-13"><a href=""></a><span class="ex">│</span>   ├── methodology.md    </span>
+<span id="cb4-14"><a href=""></a><span class="ex">│</span>   ├── references.bib    </span>
+<span id="cb4-15"><a href=""></a><span class="ex">│</span>   └── project_presentation.qmd  </span>
+<span id="cb4-16"><a href=""></a><span class="ex">└──</span> README.md            </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!--`-->
+</section>
+<section id="gitignore" class="slide level2 smaller">
+<h2>.gitignore</h2>
+<ul>
+<li>Fichier texte qui spécifie les fichiers et dossiers à ignorer</li>
+<li>Les fichiers et dossiers spécifiés dans le .gitignore ne seront pas suivis par Git</li>
+<li>Exemple de contenu d’un .gitignore
+<ul>
+<li><code>*.csv</code> - Ignore tous les fichiers .csv</li>
+<li><code>data/</code> - Ignore le dossier data</li>
+<li><code>.Rproj</code> - Ignore tous les fichiers .Rproj</li>
+<li><code>.Renviron</code> - Ignore le fichier .Renviron</li>
+</ul></li>
+</ul>
 </section>
 <section id="branches" class="slide level2 smaller">
 <h2>Branches</h2>

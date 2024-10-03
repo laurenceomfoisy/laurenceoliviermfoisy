@@ -13,13 +13,22 @@ format:
     transition-speed: fast
 ---
 
-## Avant de commencer?
+## Avant de commencer, un peu de terminal
 
 - Ce que vous entrez dans le terminal n'est pas du code, mais des commandes avec des instructions
 - Les commandes sont des applications qui sont déjà installées sur votre ordinateur
 - Chaque commande est un fichier exécutable. `ls` est un fichier dans dans `/bin/ls`
 - Le terminal est l'équivalent d'un explorateur de fichiers, mais en mode texte
 - À tout moment vous êtes dans une location précise, dans un répertoire ou un dossier
+
+## Pourquoi utiliser le terminal?
+
+- Compréhension accru de l'ordinateur et de votre arborescence
+- Plusieurs outils ne sont disponibles que dans le terminal
+- Se familiariser avec la console de R
+- Git est concentré sur le terminal
+
+- Meilleure raison: Parce que c'est le fun!
 
 ## Liste de commandes utiles{.center .smaller}
 
@@ -32,12 +41,6 @@ format:
 - `cat` - Affiche le contenu d'un fichier
 - `git` - Gestionnaire de version
 
-<!--NOTE: A tout moment vous êtes dans un répertoire précis. Important de savoir où vous êtes. Vous aide avec votre code, sauvegarder des documents. Charger des docs. etc. -->
-
-## Pourquoi utiliser le terminal?
-
-- Parce que c'est le fun!
-
 ## Git{.smaller}
 
 ::::{.columns}
@@ -47,7 +50,7 @@ format:
 - Créé par Linus Torvalds en 2005
 - Gestion de version
 - Permet de suivre l'évolution d'un projet
-- Utile pour tout ce qui est texte
+- Utile pour tout ce qui est texte, incluant les articles et les présentations
 - Enregistre tous les changements faits depuis la création du projet (.git)
 - Reproductibilité et transparence
 
@@ -88,7 +91,7 @@ Git + Internet = GitHub
 
 - Plateforme de développement collaboratif
 - Héberge des projets Git
-- Appartient à Microsoft
+- Acheté par Microsoft pour 7.5 milliards de dollars
 - Lieu d'entreposage de plusieurs projets open source
 
 ## Projets open source sur GitHub
@@ -111,21 +114,74 @@ Git + Internet = GitHub
 :::
 ::::
 
-## Créer un compte et ajouter vos accès
+## Créer un compte et ajouter vos accès avec un token{.smaller}
 
+- Créer un compte GitHub :
+- Générer un token d'accès classique :
+    - Connectez-vous à GitHub et allez dans vos Paramètres.
+    - Dans la section Developer Settings, cliquez sur Personal Access Tokens, puis sur Tokens (classic).
+    - Créez un nouveau token en cliquant sur Generate new token (classic).
+    - Choisissez la durée illimité et donnez tous les accès        
+    - Copiez le token généré, car vous ne pourrez plus le visualiser après avoir quitté cette page.
+    
+- Quand Git demandera un identifiant et un mot de passe, entrez :
+    - Identifiant : votre nom d'utilisateur GitHub.
+    - Mot de passe : collez le token que vous avez généré.
 
-## Où mettre les données?
+## Comment l'utiliser?{.smaller}
 
-## Comment l'utiliser?
+1. Cloner un projet existant sur votre ordinateur.
+  - Ce projet est maintenant un dossier sur votre ordinateur. Vous pouvez le modifier, le supprimer, le déplacer, etc.
+
 
 ```bash
 git clone https://lien/vers/repo.git
-git pull #git pull est en fait deux commandes: git fetch et git merge
-git add votre_fichier
-git commit -m "Message"
+```
+<!--`-->
+
+2. Modifier le projet, ajouter des fichiers, etc.
+
+```bash
+git pull 
+git add votre_fichier_1 votre_fichier_2
+git commit -m "Message de commit"
 git push
 ```
 <!--`-->
+
+## Organiser votre répertoire et placer vos données{.smaller}
+
+```bash
+/MonProjet
+├── data/                
+│   ├── raw_data.csv      
+│   └── cleaned_data.csv  
+├── scripts/             
+│   ├── analyse.R         
+│   └── visualization.R   
+├── results/             
+│   ├── summary_statistics.csv  
+│   └── plots/                  
+│       └── data_distribution.png  
+├── docs/                
+│   ├── methodology.md    
+│   ├── references.bib    
+│   └── project_presentation.qmd  
+└── README.md            
+```
+<!--`-->
+
+## .gitignore{.smaller}
+
+- Fichier texte qui spécifie les fichiers et dossiers à ignorer
+- Les fichiers et dossiers spécifiés dans le .gitignore ne seront pas suivis par Git
+- Exemple de contenu d'un .gitignore
+  - `*.csv` - Ignore tous les fichiers .csv
+  - `data/` - Ignore le dossier data
+  - `.Rproj` - Ignore tous les fichiers .Rproj
+  - `.Renviron` - Ignore le fichier .Renviron
+
+
 
 ## Branches{.smaller}
 
