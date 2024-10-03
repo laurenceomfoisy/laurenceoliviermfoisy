@@ -78,6 +78,38 @@ git config --global credential.helper store
 
 ![](img/git.png)
 
+## Organiser votre répertoire et placer vos données{.smaller}
+
+```bash
+/MonProjet
+├── data/                
+│   ├── raw_data.csv      
+│   └── cleaned_data.csv  
+├── scripts/             
+│   ├── analyse.R         
+│   └── visualization.R   
+├── results/             
+│   ├── summary_statistics.csv  
+│   └── plots/                  
+│       └── data_distribution.png  
+├── docs/                
+│   ├── methodology.md    
+│   ├── references.bib    
+│   └── project_presentation.qmd  
+└── README.md            
+```
+<!--`-->
+
+## .gitignore{.smaller}
+
+- Fichier texte qui spécifie les fichiers et dossiers à ignorer
+- Les fichiers et dossiers spécifiés dans le .gitignore ne seront pas suivis par Git
+- Exemple de contenu d'un .gitignore
+  - `*.csv` - Ignore tous les fichiers .csv
+  - `data/` - Ignore le dossier data
+  - `.Rproj` - Ignore tous les fichiers .Rproj
+  - `.Renviron` - Ignore le fichier .Renviron
+
 ## GitHub{.smaller}
 
 ![](img/git_github.png)
@@ -114,7 +146,7 @@ Git + Internet = GitHub
 :::
 ::::
 
-## Créer un compte et ajouter vos accès avec un token{.smaller}
+## Ajouter vos accès{.smaller}
 
 - Créer un compte GitHub :
 - Générer un token d'accès classique :
@@ -148,40 +180,6 @@ git commit -m "Message de commit"
 git push
 ```
 <!--`-->
-
-## Organiser votre répertoire et placer vos données{.smaller}
-
-```bash
-/MonProjet
-├── data/                
-│   ├── raw_data.csv      
-│   └── cleaned_data.csv  
-├── scripts/             
-│   ├── analyse.R         
-│   └── visualization.R   
-├── results/             
-│   ├── summary_statistics.csv  
-│   └── plots/                  
-│       └── data_distribution.png  
-├── docs/                
-│   ├── methodology.md    
-│   ├── references.bib    
-│   └── project_presentation.qmd  
-└── README.md            
-```
-<!--`-->
-
-## .gitignore{.smaller}
-
-- Fichier texte qui spécifie les fichiers et dossiers à ignorer
-- Les fichiers et dossiers spécifiés dans le .gitignore ne seront pas suivis par Git
-- Exemple de contenu d'un .gitignore
-  - `*.csv` - Ignore tous les fichiers .csv
-  - `data/` - Ignore le dossier data
-  - `.Rproj` - Ignore tous les fichiers .Rproj
-  - `.Renviron` - Ignore le fichier .Renviron
-
-
 
 ## Branches{.smaller}
 
