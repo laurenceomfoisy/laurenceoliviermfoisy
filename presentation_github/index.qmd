@@ -13,13 +13,40 @@ format:
     transition-speed: fast
 ---
 
-## Avant de commencer, un peu de terminal
+## Avant de commencer, un peu de terminal{.smaller}
 
 - Ce que vous entrez dans le terminal n'est pas du code, mais des commandes avec des instructions
 - Les commandes sont des applications qui sont déjà installées sur votre ordinateur
 - Chaque commande est un fichier exécutable. `ls` est un fichier dans dans `/bin/ls`
 - Le terminal est l'équivalent d'un explorateur de fichiers, mais en mode texte
 - À tout moment vous êtes dans une location précise, dans un répertoire ou un dossier
+
+
+## Terminal
+
+::::{.columns}
+
+:::{.column width=50%}
+
+### macOS
+
+- Terminal
+
+![](img/terminal.png){width=50%}
+
+:::
+
+:::{.column width=50%}
+
+### Windows
+
+- PowerShell
+
+![](img/powershell.png)
+
+:::
+
+::::
 
 ## Pourquoi utiliser le terminal?
 
@@ -65,7 +92,13 @@ format:
 ::::
 
 ## Important
-Configurer git avant de commencer à l'utiliser
+
+
+- Télécharger et installer Git depuis [git-scm.com](git-scm.com)
+
+- Configurer git avant de commencer à l'utiliser
+
+  - Dans le terminal:
 
 ```bash
 git config --global user.name "username"
@@ -110,6 +143,10 @@ git config --global credential.helper store
   - `.Rproj` - Ignore tous les fichiers .Rproj
   - `.Renviron` - Ignore le fichier .Renviron
 
+## Git{.smaller}
+
+![](img/git.png)
+
 ## GitHub{.smaller}
 
 ![](img/git_github.png)
@@ -117,9 +154,9 @@ git config --global credential.helper store
 
 ## GitHub
 
-Git sans internet n'est pas très utile
+- Git sans internet n'est pas très utile
 
-Git + Internet = GitHub
+- Git + Internet = GitHub
 
 - Plateforme de développement collaboratif
 - Héberge des projets Git
@@ -181,13 +218,51 @@ git push
 ```
 <!--`-->
 
+## Les README.md{.smaller}
+
+- Fichier principal pour présenter et documenter un projet
+- Doit inclure une description claire du projet, comment l'installer et l'utiliser
+- Souvent écrit en Markdown (.md)
+- Contient des instructions pour contribuer et des informations sur les dépendances et les licences
+
+- Exemple de structure :
+
+  - Titre du projet
+  - Description
+  - Comment installer
+  - Comment utiliser
+  - Comment contribuer
+
 ## Branches{.smaller}
 
 - Dans notre contexte, une branche est un chapitre, une section, un élément de votre projet
 
 ![](img/branch.webp)
 
+## Contribuer? Pull requests (PR){.smaller}
+
+- Les pull requests permettent à d'autres utilisateurs de proposer des modifications à votre projet
+- Processus de collaboration :
+  - Un contributeur crée une branche avec ses changements
+  - Une PR est ouverte pour soumettre ces changements
+  - Le propriétaire du projet peut commenter, demander des modifications ou accepter la PR
+
+- Important pour :
+
+  - Suivi des modifications
+  - Discussion autour des changements
+  - Validation avant intégration
+
+[À vous de contribuer au livre d'outils](https://github.com/clessn/livre-outils)
 
 ## GitHub pages
+
+- GitHub pages vous permet d'héberger un site web gratuitement
+- GitHub permet aussi de lier un nom de domaine à votre site
+- Idéal pour votre portfolio de chercheur
+
+
+[Gabarit de site web](https://github.com/clessn/gabarit-site-web)
+
 
 ## Conclusion

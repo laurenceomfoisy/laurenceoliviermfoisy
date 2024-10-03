@@ -405,7 +405,7 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 </div>
 
 </section>
-<section id="avant-de-commencer-un-peu-de-terminal" class="slide level2">
+<section id="avant-de-commencer-un-peu-de-terminal" class="slide level2 smaller">
 <h2>Avant de commencer, un peu de terminal</h2>
 <ul>
 <li>Ce que vous entrez dans le terminal n’est pas du code, mais des commandes avec des instructions</li>
@@ -414,6 +414,23 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 <li>Le terminal est l’équivalent d’un explorateur de fichiers, mais en mode texte</li>
 <li>À tout moment vous êtes dans une location précise, dans un répertoire ou un dossier</li>
 </ul>
+</section>
+<section id="terminal" class="slide level2">
+<h2>Terminal</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="macos">macOS</h3>
+<ul>
+<li>Terminal</li>
+</ul>
+<p><img data-src="img/terminal.png" style="width:50.0%"></p>
+</div><div class="column" style="width:50%;">
+<h3 id="windows">Windows</h3>
+<ul>
+<li>PowerShell</li>
+</ul>
+<p><img data-src="img/powershell.png"></p>
+</div></div>
 </section>
 <section id="pourquoi-utiliser-le-terminal" class="slide level2">
 <h2>Pourquoi utiliser le terminal?</h2>
@@ -456,7 +473,13 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 </section>
 <section id="important" class="slide level2">
 <h2>Important</h2>
-<p>Configurer git avant de commencer à l’utiliser</p>
+<ul>
+<li><p>Télécharger et installer Git depuis <a href="git-scm.com">git-scm.com</a></p></li>
+<li><p>Configurer git avant de commencer à l’utiliser</p>
+<ul>
+<li>Dans le terminal:</li>
+</ul></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href=""></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"username"</span></span>
 <span id="cb1-2"><a href=""></a><span class="fu">git</span> config <span class="at">--global</span> user.email votre@email.com</span>
 <span id="cb1-3"><a href=""></a><span class="fu">git</span> config <span class="at">--global</span> credential.helper store</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -500,19 +523,23 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 </ul></li>
 </ul>
 </section>
+<section id="git-2" class="slide level2 smaller">
+<h2>Git</h2>
+
+<img data-src="img/git.png" class="r-stretch"></section>
 <section id="github" class="slide level2 smaller">
 <h2>GitHub</h2>
 
 <img data-src="img/git_github.png" class="r-stretch"></section>
 <section id="github-1" class="slide level2">
 <h2>GitHub</h2>
-<p>Git sans internet n’est pas très utile</p>
-<p>Git + Internet = GitHub</p>
 <ul>
-<li>Plateforme de développement collaboratif</li>
-<li>Héberge des projets Git</li>
-<li>Acheté par Microsoft pour 7.5 milliards de dollars</li>
-<li>Lieu d’entreposage de plusieurs projets open source</li>
+<li><p>Git sans internet n’est pas très utile</p></li>
+<li><p>Git + Internet = GitHub</p></li>
+<li><p>Plateforme de développement collaboratif</p></li>
+<li><p>Héberge des projets Git</p></li>
+<li><p>Acheté par Microsoft pour 7.5 milliards de dollars</p></li>
+<li><p>Lieu d’entreposage de plusieurs projets open source</p></li>
 </ul>
 </section>
 <section id="projets-open-source-sur-github" class="slide level2">
@@ -574,6 +601,23 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 <span id="cb4-4"><a href=""></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <!--`-->
 </section>
+<section id="les-readme.md" class="slide level2 smaller">
+<h2>Les README.md</h2>
+<ul>
+<li><p>Fichier principal pour présenter et documenter un projet</p></li>
+<li><p>Doit inclure une description claire du projet, comment l’installer et l’utiliser</p></li>
+<li><p>Souvent écrit en Markdown (.md)</p></li>
+<li><p>Contient des instructions pour contribuer et des informations sur les dépendances et les licences</p></li>
+<li><p>Exemple de structure :</p>
+<ul>
+<li>Titre du projet</li>
+<li>Description</li>
+<li>Comment installer</li>
+<li>Comment utiliser</li>
+<li>Comment contribuer</li>
+</ul></li>
+</ul>
+</section>
 <section id="branches" class="slide level2 smaller">
 <h2>Branches</h2>
 <ul>
@@ -581,8 +625,33 @@ Laurence-Olivier M. Foisy<br>Adrien Cloutier
 </ul>
 
 <img data-src="img/branch.webp" class="r-stretch"></section>
+<section id="contribuer-pull-requests-pr" class="slide level2 smaller">
+<h2>Contribuer? Pull requests (PR)</h2>
+<ul>
+<li><p>Les pull requests permettent à d’autres utilisateurs de proposer des modifications à votre projet</p></li>
+<li><p>Processus de collaboration :</p>
+<ul>
+<li>Un contributeur crée une branche avec ses changements</li>
+<li>Une PR est ouverte pour soumettre ces changements</li>
+<li>Le propriétaire du projet peut commenter, demander des modifications ou accepter la PR</li>
+</ul></li>
+<li><p>Important pour :</p>
+<ul>
+<li>Suivi des modifications</li>
+<li>Discussion autour des changements</li>
+<li>Validation avant intégration</li>
+</ul></li>
+</ul>
+<p><a href="https://github.com/clessn/livre-outils">À vous de contribuer au livre d’outils</a></p>
+</section>
 <section id="github-pages" class="slide level2">
 <h2>GitHub pages</h2>
+<ul>
+<li>GitHub pages vous permet d’héberger un site web gratuitement</li>
+<li>GitHub permet aussi de lier un nom de domaine à votre site</li>
+<li>Idéal pour votre portfolio de chercheur</li>
+</ul>
+<p><a href="https://github.com/clessn/gabarit-site-web">Gabarit de site web</a></p>
 </section>
 <section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
