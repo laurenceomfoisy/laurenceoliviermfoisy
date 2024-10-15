@@ -262,7 +262,7 @@ git push
 - Idéal pour votre portfolio de chercheur
 
 
-[Gabarit de site web](https://github.com/clessn/gabarit-site-web)
+[Gabarit de site web](https://github.com/clessn/gabarit_site_web)
 
 
 ## Conclusion
