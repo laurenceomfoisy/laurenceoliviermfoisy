@@ -6,7 +6,7 @@
     <title>CV - Your Name</title>
     <style>
       .container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 2rem auto;
         padding: 0 1rem;
         font-family:
@@ -44,17 +44,26 @@
     <div class="container">
       <h1>Curriculum Vitae</h1>
       <!-- PDF Viewer -->
-      <iframe
-        src="https://raw.githubusercontent.com/LaurenceOMFoisy/acad_cv/main/main.pdf"
+      <object
+        data="assets/pdf/cv.pdf"
+        type="application/pdf"
         class="pdf-container"
-        title="CV Document Viewer"
-        aria-label="Curriculum Vitae document viewer"
       >
-      </iframe>
+        <div>
+          <p>
+            It appears you don't have a PDF plugin for this browser. No worries!
+            You can:
+          </p>
+          <a href="assets/pdf/cv.pdf" class="download-button"
+            >Download the PDF</a
+          >
+        </div>
+      </object>
+
       <!-- Download Option -->
       <div>
         <a
-          href="https://raw.githubusercontent.com/LaurenceOMFoisy/acad_cv/main/main.pdf"
+          href="assets/pdf/cv.pdf"
           download
           class="download-button"
           aria-label="Download CV as PDF"
