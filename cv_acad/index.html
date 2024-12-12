@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV - Your Name</title>
-    <!-- Include PDF.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <style>
       .container {
         max-width: 1000px;
@@ -18,26 +16,12 @@
       }
       .pdf-container {
         width: 100%;
+        height: 800px;
         margin: 1rem 0;
         border: 1px solid #ddd;
         border-radius: 4px;
-        background-color: #525659;
-        overflow: auto;
-        padding: 1rem;
       }
-      .pdf-controls {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 1rem;
-        align-items: center;
-      }
-      #pdf-canvas {
-        border-radius: 4px;
-        margin: 0 auto;
-        display: block;
-      }
-      .download-button,
-      .nav-button {
+      .download-button {
         display: inline-block;
         padding: 0.5rem 1rem;
         background-color: #0366d6;
@@ -45,15 +29,8 @@
         text-decoration: none;
         border-radius: 4px;
         margin: 1rem 0;
-        border: none;
-        cursor: pointer;
       }
-      .nav-button:disabled {
-        background-color: #ccc;
-        cursor: not-allowed;
-      }
-      .download-button:hover,
-      .nav-button:hover:not(:disabled) {
+      .download-button:hover {
         background-color: #0255b3;
       }
       .accessibility-info {
@@ -61,47 +38,25 @@
         font-size: 0.9rem;
         margin: 1rem 0;
       }
-      #error-message {
-        display: none;
-        padding: 1rem;
-        background-color: #fff;
-        text-align: center;
-      }
-      #loading-message {
-        color: white;
-        text-align: center;
-        padding: 2rem;
-      }
-      .page-info {
-        color: white;
-      }
     </style>
   </head>
   <body>
     <div class="container">
       <h1>Curriculum Vitae</h1>
-      <!-- PDF Controls -->
-      <div class="pdf-controls">
-        <button id="prev" class="nav-button" disabled>Previous</button>
-        <span id="page-info" class="page-info">Page: 1 / 1</span>
-        <button id="next" class="nav-button" disabled>Next</button>
-      </div>
-      <!-- PDF Viewer -->
-      <div class="pdf-container" id="pdf-container">
-        <div id="loading-message">Loading PDF...</div>
-        <div id="error-message">
-          <p>Unable to display PDF. You can download it instead:</p>
-          <a href="assets/pdf/cv.pdf" class="download-button">Download PDF</a>
-        </div>
-        <canvas id="pdf-canvas"></canvas>
-      </div>
-
+      <!-- PDF Viewer using PDF.js -->
+      <iframe
+        src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/LaurenceOMFoisy/acad_cv/main/main.pdf"
+        class="pdf-container"
+        title="CV Document Viewer"
+        aria-label="Curriculum Vitae document viewer"
+      >
+      </iframe>
       <!-- Download Option -->
       <div>
         <a
-          href="assets/pdf/cv.pdf"
+          href="https://raw.githubusercontent.com/LaurenceOMFoisy/acad_cv/main/main.pdf"
+          download
           class="download-button"
-          download="cv.pdf"
           aria-label="Download CV as PDF"
         >
           Download PDF Version
@@ -122,88 +77,5 @@
         </ul>
       </div>
     </div>
-
-    <script>
-      // Configure PDF.js worker
-      pdfjsLib.GlobalWorkerOptions.workerSrc =
-        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
-
-      let currentPage = 1;
-      let pdfDoc = null;
-
-      // Function to render a specific page
-      async function renderPage(pageNum) {
-        const page = await pdfDoc.getPage(pageNum);
-        const canvas = document.getElementById("pdf-canvas");
-        const context = canvas.getContext("2d");
-
-        // Calculate scale to fit the container width while maintaining aspect ratio
-        const container = document.getElementById("pdf-container");
-        const desiredWidth = container.clientWidth - 32; // Account for padding
-        const viewport = page.getViewport({ scale: 1 });
-        const scale = desiredWidth / viewport.width;
-        const scaledViewport = page.getViewport({ scale });
-
-        // Set canvas dimensions
-        canvas.width = scaledViewport.width;
-        canvas.height = scaledViewport.height;
-
-        // Render PDF page
-        const renderContext = {
-          canvasContext: context,
-          viewport: scaledViewport,
-        };
-
-        await page.render(renderContext);
-
-        // Update page info
-        document.getElementById("page-info").textContent =
-          `Page: ${pageNum} / ${pdfDoc.numPages}`;
-
-        // Update button states
-        document.getElementById("prev").disabled = pageNum <= 1;
-        document.getElementById("next").disabled = pageNum >= pdfDoc.numPages;
-      }
-
-      // Function to load and render the PDF
-      async function loadPDF() {
-        try {
-          document.getElementById("loading-message").style.display = "block";
-          document.getElementById("error-message").style.display = "none";
-          document.getElementById("pdf-canvas").style.display = "none";
-
-          const loadingTask = pdfjsLib.getDocument("assets/pdf/cv.pdf");
-          pdfDoc = await loadingTask.promise;
-
-          document.getElementById("loading-message").style.display = "none";
-          document.getElementById("pdf-canvas").style.display = "block";
-
-          await renderPage(currentPage);
-        } catch (error) {
-          console.error("Error loading PDF:", error);
-          document.getElementById("loading-message").style.display = "none";
-          document.getElementById("error-message").style.display = "block";
-          document.getElementById("pdf-canvas").style.display = "none";
-        }
-      }
-
-      // Event listeners for navigation
-      document.getElementById("prev").addEventListener("click", () => {
-        if (currentPage > 1) {
-          currentPage--;
-          renderPage(currentPage);
-        }
-      });
-
-      document.getElementById("next").addEventListener("click", () => {
-        if (currentPage < pdfDoc.numPages) {
-          currentPage++;
-          renderPage(currentPage);
-        }
-      });
-
-      // Load PDF when page loads
-      window.addEventListener("load", loadPDF);
-    </script>
   </body>
 </html>
