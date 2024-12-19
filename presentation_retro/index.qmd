@@ -50,7 +50,7 @@ Réplicabilité dans différents contextes
 :::
 ::::
 
-## Défis Majeurs {.center}
+## Défis Majeurs à la réplicabilité{.center}
 
 1. Complexité Contextuelle et Temporelle
 2. Ambiguïté Catégorielle
@@ -59,7 +59,7 @@ Réplicabilité dans différents contextes
 
 ## Défi 1 : Complexité Contextuelle
 
-- Comprendre les différents contextes [@scott99; @odonnell93; @dellaporta01]
+- Manque de compréhension contextuelle [@scott99; @odonnell93; @dellaporta01]
 
 ## Défi 2 : Ambiguïté Catégorielle
 
@@ -73,15 +73,16 @@ Réplicabilité dans différents contextes
 
 ## Défi 3 : Biais de Données
 
+**Performe moins bien dans les contextes non occidentaux**
+
+- Biais occidentaux systématiques [@hartmann_etal23; @openai22; @johnson_etal22]
 - Common Crawl : 2,6 milliards de pages [@touvron_etal23a]
 - 67% de contenu en anglais [@baack24]
-- Biais occidentaux systématiques [@hartmann_etal23; @openai22; @johnson_etal22]
 
 ## Défi 4 : Causalité Complexe
 
-- Limites des GML
-  - Identification des tendances != Compréhension causale [@yamin_etal24]
-  - Rôle du chercheur dans l'interprétation [@fearon91]
+- Identification des tendances != Compréhension causale [@yamin_etal24]
+- Rôle du chercheur essentiel dans l'interprétation [@fearon91]
 
 ## Solutions Proposées {.smaller}
 
@@ -109,9 +110,7 @@ Réplicabilité dans différents contextes
 
 - Approche hybride nécessaire 
 - GML comme outils d'augmentation, non de remplacement
-- Perspectives d'avenir pour la recherche
-  - Standardisation productive
-  - Préservation de l'expertise humaine
+- Transparence dans le processus
 
 ## Discussion 
 
@@ -119,11 +118,13 @@ Réplicabilité dans différents contextes
 Les biais dans les revues de littérature
 
 ## Introduction {.center}
+
 - La science s'appuie sur les travaux antérieurs 
 - Les revues de littérature sont essentielles
 - Problème: Biais systématiques dans la sélection et l'analyse
 
 ## Question {.center}
+
 > La recherche en science politique nécessite une bonne compréhension des travaux antérieurs. On sait que cet effort de recensement est souvent associé à des biais. En quoi les GML peuvent-ils éviter ces écueils?
 
 ## Défi Méthodologique - Biais de sélection {.smaller}
@@ -135,18 +136,21 @@ Les biais dans les revues de littérature
   - Comment éviter de privilégier certaines traditions intellectuelles?
 
 ## Angles Morts Persistants {.smaller}
+
 1. Biais intersectionnels [@weldon06]
-2. Inadéquation des cadres occidentaux [@odonnell93]
+2. Biais occidentaux [@odonnell93]
 3. Savoirs pratiques difficiles à formaliser [@scott99]
 4. Domination de l'anglais [@daoust_etal22]
 
 ## Solution: Revues systématiques {.center}
+
 - Approche méthodologique rigoureuse
 - Protocole standardisé et transparent [@muka_etal20]
 - Inclusion de la littérature grise
 - Processus long et complexe (67 semaines) [@marshall_wallace19]
 
 ## Apport des GML {.smaller}
+
 :::: {.columns}
 ::: {.column width="50%"}
 **Automatisation**
@@ -155,7 +159,7 @@ Les biais dans les revues de littérature
 - Extraction de données
 :::
 ::: {.column width="50%"}
-**Innovation**
+**Aide au chercheur**
 - Double codage humain-machine
 - Détection de patterns complexes [@vanaltena_etal19a]
 - Connexions interdisciplinaires [@vanaltena_etal19a]
@@ -163,21 +167,15 @@ Les biais dans les revues de littérature
 ::::
 
 ## Limites des GML {.smaller}
-:::: {.columns}
-::: {.column width="50%"}
-**Biais Inhérents**
+
 - Données d'entraînement biaisées [@hartmann_etal23]
 - Reproduction des inégalités existantes [@openai22]
-:::
-::: {.column width="50%"}
-**Défis Persistants**
 - Biais géographiques [@odonnell93; @scott99; @weldon06]
 - Biais linguistiques [@weldon06; @daoust_etal22]
 - Questions conceptuelles
-:::
-::::
 
 ## Solutions Proposées {.center}
+
 - Critères de sélection prédéfinis  
 - Protocoles rigoureux
 - Approche hybride humain-machine
@@ -185,10 +183,10 @@ Les biais dans les revues de littérature
 - Utilisation de modèles open-source
 
 ## Conclusion
+
 - GML comme outil d'amélioration, non de remplacement
 - Nécessité d'une supervision humaine
 - Vers des revues de littérature plus inclusives et rigoureuses
-- Importance de la réflexion éthique et méthodologique
 
 ## Discussion
 
