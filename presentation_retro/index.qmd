@@ -153,16 +153,22 @@ Les biais dans les revues de littérature
 
 :::: {.columns}
 ::: {.column width="50%"}
+
 **Automatisation**
+
 - Élimination des doublons [@tsafnat_etal14; @alshami_etal23; @clark_etal20]
 - Triage préliminaire
 - Extraction de données
+
 :::
 ::: {.column width="50%"}
+
 **Aide au chercheur**
+
 - Double codage humain-machine
 - Détection de patterns complexes [@vanaltena_etal19a]
 - Connexions interdisciplinaires [@vanaltena_etal19a]
+
 :::
 ::::
 
